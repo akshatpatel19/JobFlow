@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account - JobFlow</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="job-seeker" data-page="signup">
+  <div class="sidebar">
+    <a href="../index.html" class="sidebar-logo logo-brand">JobFlow</a>
+    <nav class="sidebar-nav">
+      <a href="4-job-seeker-dashboard.html" data-page="dashboard">Dashboard</a>
+      <a href="5-job-listings.html" data-page="jobs">Browse Jobs</a>
+      <a href="9-saved-jobs.html" data-page="saved">Saved Jobs</a>
+      <a href="10-my-applications.html" data-page="applications">My Applications</a>
+      <a href="11-profile.html" data-page="profile">My Profile</a>
+      <a href="13-notifications.html" data-page="notifications">Notifications</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <div class="header-content">
+        <div class="header-left">
+          <h1 style="margin: 0;">Create Your Profile</h1>
+        </div>
+        <div class="header-right">
+          <a href="../index.html" class="btn btn-secondary btn-sm">Back to Home</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="container" style="max-width: 600px;">
+        <div class="page-header" style="text-align: center;">
+          <h2>Join JobFlow Today</h2>
+          <p>Create your account to start exploring opportunities</p>
+        </div>
+
+        <div class="card mt-lg">
+          <form id="signup-form">
+            <div class="grid grid-cols-2">
+              <div class="form-group">
+                <label for="first-name">First Name <span class="required">*</span></label>
+                <input type="text" id="first-name" name="firstName" required placeholder="John">
+                <span class="form-error" id="first-name-error" style="display: none;">First name is required</span>
+              </div>
+
+              <div class="form-group">
+                <label for="last-name">Last Name <span class="required">*</span></label>
+                <input type="text" id="last-name" name="lastName" required placeholder="Doe">
+                <span class="form-error" id="last-name-error" style="display: none;">Last name is required</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="signup-email">Email Address <span class="required">*</span></label>
+              <input type="email" id="signup-email" name="email" required placeholder="your@email.com">
+              <span class="form-error" id="signup-email-error" style="display: none;">Please enter a valid email</span>
+            </div>
+
+            <div class="form-group">
+              <label for="signup-password">Password <span class="required">*</span></label>
+              <input type="password" id="signup-password" name="password" required placeholder="Create a strong password">
+              <span class="form-hint">At least 8 characters with uppercase, lowercase, and numbers</span>
+              <span class="form-error" id="signup-password-error" style="display: none;">Password is required</span>
+            </div>
+
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password <span class="required">*</span></label>
+              <input type="password" id="confirm-password" name="confirmPassword" required placeholder="Confirm your password">
+              <span class="form-error" id="confirm-password-error" style="display: none;">Passwords do not match</span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" required placeholder="+91 95xxxxxxxx">
+              <span class="form-error" id="phone-error" style="display: none;">Please enter a valid phone number</span>
+            </div>
+
+            <div class="form-group" style="flex-direction: row; align-items: flex-start; gap: 8px;">
+              <input type="checkbox" id="terms" name="terms" required style="width: 18px; height: 18px; margin-top: 4px;">
+              <div>
+                <label for="terms" style="margin: 0; display: inline;">I agree to the Terms of Service and Privacy Policy <span class="required">*</span></label>
+                <span class="form-error" id="terms-error" style="display: none;">You must accept the terms</span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 24px;">
+              Create Account
+            </button>
+          </form>
+
+          <div style="text-align: center; margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--color-neutral-200);">
+            <p style="margin: 0;">Already have an account? <a href="2-login.html">Sign in here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- HCI Modal -->
+  <div id="hci-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">HCI Principles on This Page</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="hci-principle">
+          <h4>Consistency and Standards</h4>
+          <p>The interface uses familiar UI patterns, standard icons, and consistent styling to reduce the learning curve.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Aesthetic and Minimalist Design</h4>
+          <p>The layout avoids clutter, focusing only on essential information to minimize cognitive load.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="document.getElementById('hci-modal').classList.remove('active')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <button id="help-btn" class="help-btn" title="Learn about HCI principles on this page">?</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+

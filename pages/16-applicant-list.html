@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applicants - JobFlow</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="recruiter" data-page="applicants">
+  <!-- Top Navigation -->
+  <div class="header">
+    <div class="header-content">
+      <div class="header-left">
+        <div class="header-title logo-brand">JobFlow Recruiter</div>
+      </div>
+      <div class="header-right">
+        <a href="15-post-job.html" class="btn btn-primary btn-sm">Post New Job</a>
+        <a href="14-recruiter-dashboard.html" class="btn btn-secondary btn-sm">Back</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content" style="margin-left: 0;">
+    <div class="page-content">
+      <div class="container">
+        <div class="page-header">
+          <h1>Applicants</h1>
+          <p>Review and manage all applications across your job postings</p>
+        </div>
+
+        <div class="grid grid-cols-4" style="gap: 16px;">
+          <!-- Sidebar Filters -->
+          <div>
+            <div class="card" style="position: sticky; top: 20px;">
+              <div class="card-header">
+                <h4 class="card-title" style="margin: 0;">Filters</h4>
+              </div>
+              <div class="card-content">
+                <div class="form-group">
+                  <label style="font-weight: 600; margin-bottom: 12px; display: block;">Job Position</label>
+                  <select style="width: 100%;">
+                    <option>All Jobs</option>
+                    <option selected>Senior Frontend Engineer (18)</option>
+                    <option>Full Stack Developer (12)</option>
+                    <option>UX/UI Designer (24)</option>
+                    <option>Product Manager (8)</option>
+                  </select>
+                </div>
+
+                <div class="form-group" style="margin-top: 16px;">
+                  <label style="font-weight: 600; margin-bottom: 12px; display: block;">Status</label>
+                  <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label style="font-weight: normal;"><input type="checkbox" checked> Applied (8)</label>
+                    <label style="font-weight: normal;"><input type="checkbox" checked> Under Review (5)</label>
+                    <label style="font-weight: normal;"><input type="checkbox"> Interview (2)</label>
+                    <label style="font-weight: normal;"><input type="checkbox"> Rejected (3)</label>
+                  </div>
+                </div>
+
+                <div class="form-group" style="margin-top: 16px;">
+                  <label style="font-weight: 600; margin-bottom: 12px; display: block;">Rating</label>
+                  <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label style="font-weight: normal;"><input type="checkbox"> ⭐ 5 Stars</label>
+                    <label style="font-weight: normal;"><input type="checkbox"> ⭐ 4+ Stars</label>
+                    <label style="font-weight: normal;"><input type="checkbox"> ⭐ 3+ Stars</label>
+                    <label style="font-weight: normal;"><input type="checkbox"> Unrated</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Applicants List -->
+          <div style="grid-column: span 3;">
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <!-- Applicant 1 -->
+              <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: start; gap: 16px;">
+                  <div style="flex: 1;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+                      <h4 style="margin: 0;">John Doe</h4>
+                      <span style="color: var(--color-accent-orange);">★★★★★</span>
+                    </div>
+                    <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.9rem;">
+                      Senior Frontend Engineer • Applied 2 hours ago
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;">
+                      <span class="badge badge-primary">React</span>
+                      <span class="badge badge-primary">TypeScript</span>
+                      <span class="badge badge-primary">8+ years</span>
+                    </div>
+                    <p style="color: var(--color-text-secondary); font-size: 0.85rem; margin: 8px 0 0 0;">
+                      Passionate about building scalable user interfaces with strong performance optimization skills.
+                    </p>
+                  </div>
+                  <div style="text-align: right; flex-shrink: 0;">
+                    <span class="badge badge-reviewing" style="display: block; margin-bottom: 12px;">Under Review</span>
+                    <a href="17-candidate-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Applicant 2 -->
+              <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: start; gap: 16px;">
+                  <div style="flex: 1;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+                      <h4 style="margin: 0;">Sarah Johnson</h4>
+                      <span style="color: var(--color-accent-orange);">★★★★</span>
+                    </div>
+                    <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.9rem;">
+                      UX/UI Designer • Applied 1 day ago
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;">
+                      <span class="badge badge-orange">Figma</span>
+                      <span class="badge badge-orange">Adobe XD</span>
+                      <span class="badge badge-orange">6+ years</span>
+                    </div>
+                    <p style="color: var(--color-text-secondary); font-size: 0.85rem; margin: 8px 0 0 0;">
+                      Experienced in creating intuitive user experiences with a focus on accessibility and inclusivity.
+                    </p>
+                  </div>
+                  <div style="text-align: right; flex-shrink: 0;">
+                    <span class="badge badge-interview" style="display: block; margin-bottom: 12px;">Interview Scheduled</span>
+                    <a href="17-candidate-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Applicant 3 -->
+              <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: start; gap: 16px;">
+                  <div style="flex: 1;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+                      <h4 style="margin: 0;">Mike Chen</h4>
+                      <span style="color: var(--color-accent-orange);">★★★</span>
+                    </div>
+                    <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.9rem;">
+                      Full Stack Developer • Applied 3 days ago
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;">
+                      <span class="badge badge-primary">Node.js</span>
+                      <span class="badge badge-primary">React</span>
+                      <span class="badge badge-primary">4+ years</span>
+                    </div>
+                    <p style="color: var(--color-text-secondary); font-size: 0.85rem; margin: 8px 0 0 0;">
+                      Full-stack developer with expertise in MERN stack and REST API design.
+                    </p>
+                  </div>
+                  <div style="text-align: right; flex-shrink: 0;">
+                    <span class="badge badge-applied" style="display: block; margin-bottom: 12px;">Applied</span>
+                    <a href="17-candidate-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Applicant 4 -->
+              <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: start; gap: 16px;">
+                  <div style="flex: 1;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+                      <h4 style="margin: 0;">Emma Wilson</h4>
+                      <span style="color: var(--color-accent-orange);">★★★★★</span>
+                    </div>
+                    <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.9rem;">
+                      Product Manager • Applied 5 days ago
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;">
+                      <span class="badge badge-primary">Strategy</span>
+                      <span class="badge badge-primary">Product</span>
+                      <span class="badge badge-primary">9+ years</span>
+                    </div>
+                    <p style="color: var(--color-text-secondary); font-size: 0.85rem; margin: 8px 0 0 0;">
+                      Results-driven PM with track record of launching successful products in fast-paced environments.
+                    </p>
+                  </div>
+                  <div style="text-align: right; flex-shrink: 0;">
+                    <span class="badge badge-accepted" style="display: block; margin-bottom: 12px;">Accepted</span>
+                    <a href="17-candidate-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Load More -->
+              <div style="text-align: center; padding: 20px;">
+                <button class="btn btn-secondary">Load More Applicants</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- HCI Modal -->
+  <div id="hci-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">HCI Principles on This Page</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="hci-principle">
+          <h4>Consistency and Standards</h4>
+          <p>The interface uses familiar UI patterns, standard icons, and consistent styling to reduce the learning curve.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Aesthetic and Minimalist Design</h4>
+          <p>The layout avoids clutter, focusing only on essential information to minimize cognitive load.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="document.getElementById('hci-modal').classList.remove('active')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <button id="help-btn" class="help-btn" title="Learn about HCI principles on this page">?</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+

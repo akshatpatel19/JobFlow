@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Jobs - JobFlow</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="job-seeker" data-page="jobs">
+  <div class="sidebar">
+    <a href="../index.html" class="sidebar-logo logo-brand">JobFlow</a>
+    <nav class="sidebar-nav">
+      <a href="4-job-seeker-dashboard.html" data-page="dashboard">Dashboard</a>
+      <a href="5-job-listings.html" data-page="jobs" class="active">Browse Jobs</a>
+      <a href="9-saved-jobs.html" data-page="saved">Saved Jobs</a>
+      <a href="10-my-applications.html" data-page="applications">My Applications</a>
+      <a href="11-profile.html" data-page="profile">My Profile</a>
+      <a href="13-notifications.html" data-page="notifications">Notifications</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <div class="header-content">
+        <div class="header-left">
+          <h1 style="margin: 0;">Browse Job Opportunities</h1>
+        </div>
+        <div class="header-right">
+          <input type="text" placeholder="Search jobs..." style="padding: 8px 16px; border: 1px solid var(--color-neutral-300); border-radius: 8px; width: 250px;">
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="container">
+        <div class="grid grid-cols-4" style="gap: 16px;">
+          <!-- Sidebar Filters -->
+          <div style="grid-column: span 1;">
+            <div class="card" style="position: sticky; top: 20px;">
+              <div class="card-header">
+                <h4 class="card-title" style="margin: 0;">Filters</h4>
+                <button class="btn btn-secondary btn-sm">Reset</button>
+              </div>
+              <div class="card-content">
+                <div class="form-group">
+                  <label style="font-weight: 600; margin-bottom: 12px; display: block;">Job Type</label>
+                  <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label style="font-weight: normal;"><input type="checkbox" checked> Full-time (245)</label>
+                    <label style="font-weight: normal;"><input type="checkbox"> Part-time (67)</label>
+                    <label style="font-weight: normal;"><input type="checkbox"> Contract (32)</label>
+                    <label style="font-weight: normal;"><input type="checkbox"> Internship (15)</label>
+                  </div>
+                </div>
+
+                <div class="form-group" style="margin-top: 20px;">
+                  <label style="font-weight: 600; margin-bottom: 12px; display: block;">Location</label>
+                  <select>
+                    <option>All Locations</option>
+                    <option selected>Remote</option>
+                    <option>San Francisco, CA</option>
+                    <option>New York, NY</option>
+                    <option>Austin, TX</option>
+                    <option>Seattle, WA</option>
+                  </select>
+                </div>
+
+                <div class="form-group" style="margin-top: 20px;">
+                  <label style="font-weight: 600; margin-bottom: 12px; display: block;">Salary Range</label>
+                  <input type="range" min="30" max="200" style="width: 100%;">
+                  <p style="margin: 8px 0 0 0; color: var(--color-primary); font-weight: 600;">$30k - $200k</p>
+                </div>
+
+                <div class="form-group" style="margin-top: 20px;">
+                  <label style="font-weight: 600; margin-bottom: 12px; display: block;">Experience Level</label>
+                  <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label style="font-weight: normal;"><input type="checkbox" checked> Entry Level (89)</label>
+                    <label style="font-weight: normal;"><input type="checkbox" checked> Mid-level (156)</label>
+                    <label style="font-weight: normal;"><input type="checkbox"> Senior (74)</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job Listings -->
+          <div style="grid-column: span 3;">
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <!-- Job Card 1 -->
+              <div class="job-card">
+                <div class="job-card-header">
+                  <div>
+                    <h3 class="job-card-title">Senior Frontend Engineer</h3>
+                    <p class="job-card-company">TechCorp Inc.</p>
+                  </div>
+                  <button class="btn btn-secondary btn-sm" style="white-space: nowrap;">Save</button>
+                </div>
+                <p style="margin: 0; color: var(--color-text-secondary);">
+                  We're looking for an experienced Frontend Engineer to join our growing team and help us build amazing user experiences.
+                </p>
+                <div class="job-card-meta">
+                  <span class="job-card-meta-item">📍 San Francisco, CA</span>
+                  <span class="job-card-meta-item">💼 Full-time</span>
+                  <span class="job-card-meta-item">⭐ Mid-level</span>
+                  <span class="job-card-meta-item">📅 Posted 2 days ago</span>
+                </div>
+                <div class="job-card-tags">
+                  <span class="badge badge-primary">React</span>
+                  <span class="badge badge-primary">TypeScript</span>
+                  <span class="badge badge-primary">CSS</span>
+                </div>
+                <div class="job-card-footer">
+                  <span class="job-card-salary">$150k - $180k/yr</span>
+                  <a href="6-job-details.html" class="btn btn-primary btn-sm">View Details</a>
+                </div>
+              </div>
+
+              <!-- Job Card 2 -->
+              <div class="job-card">
+                <div class="job-card-header">
+                  <div>
+                    <h3 class="job-card-title">Full Stack Developer</h3>
+                    <p class="job-card-company">StartupXYZ</p>
+                  </div>
+                  <button class="btn btn-secondary btn-sm" style="white-space: nowrap;">Save</button>
+                </div>
+                <p style="margin: 0; color: var(--color-text-secondary);">
+                  Join our startup as a Full Stack Developer and work with cutting-edge technologies in a fast-paced environment.
+                </p>
+                <div class="job-card-meta">
+                  <span class="job-card-meta-item">📍 Remote</span>
+                  <span class="job-card-meta-item">💼 Full-time</span>
+                  <span class="job-card-meta-item">⭐ Entry-level</span>
+                  <span class="job-card-meta-item">📅 Posted 5 days ago</span>
+                </div>
+                <div class="job-card-tags">
+                  <span class="badge badge-primary">Node.js</span>
+                  <span class="badge badge-primary">React</span>
+                  <span class="badge badge-primary">MongoDB</span>
+                </div>
+                <div class="job-card-footer">
+                  <span class="job-card-salary">$80k - $110k/yr</span>
+                  <a href="6-job-details.html" class="btn btn-primary btn-sm">View Details</a>
+                </div>
+              </div>
+
+              <!-- Job Card 3 -->
+              <div class="job-card">
+                <div class="job-card-header">
+                  <div>
+                    <h3 class="job-card-title">UX/UI Designer</h3>
+                    <p class="job-card-company">Design Studio Co.</p>
+                  </div>
+                  <button class="btn btn-secondary btn-sm" style="white-space: nowrap;">Save</button>
+                </div>
+                <p style="margin: 0; color: var(--color-text-secondary);">
+                  Design beautiful and intuitive user interfaces for web and mobile applications at a leading design-focused company.
+                </p>
+                <div class="job-card-meta">
+                  <span class="job-card-meta-item">📍 Los Angeles, CA</span>
+                  <span class="job-card-meta-item">💼 Full-time</span>
+                  <span class="job-card-meta-item">⭐ Mid-level</span>
+                  <span class="job-card-meta-item">📅 Posted 1 day ago</span>
+                </div>
+                <div class="job-card-tags">
+                  <span class="badge badge-orange">Figma</span>
+                  <span class="badge badge-orange">Adobe XD</span>
+                  <span class="badge badge-orange">UI/UX</span>
+                </div>
+                <div class="job-card-footer">
+                  <span class="job-card-salary">$120k - $150k/yr</span>
+                  <a href="6-job-details.html" class="btn btn-primary btn-sm">View Details</a>
+                </div>
+              </div>
+
+              <!-- Job Card 4 -->
+              <div class="job-card">
+                <div class="job-card-header">
+                  <div>
+                    <h3 class="job-card-title">Data Scientist</h3>
+                    <p class="job-card-company">Analytics Inc.</p>
+                  </div>
+                  <button class="btn btn-secondary btn-sm" style="white-space: nowrap;">Save</button>
+                </div>
+                <p style="margin: 0; color: var(--color-text-secondary);">
+                  Work with big data and machine learning to solve complex business problems for leading Fortune 500 companies.
+                </p>
+                <div class="job-card-meta">
+                  <span class="job-card-meta-item">📍 New York, NY</span>
+                  <span class="job-card-meta-item">💼 Full-time</span>
+                  <span class="job-card-meta-item">⭐ Senior</span>
+                  <span class="job-card-meta-item">📅 Posted 3 days ago</span>
+                </div>
+                <div class="job-card-tags">
+                  <span class="badge badge-primary">Python</span>
+                  <span class="badge badge-primary">ML</span>
+                  <span class="badge badge-primary">TensorFlow</span>
+                </div>
+                <div class="job-card-footer">
+                  <span class="job-card-salary">$170k - $220k/yr</span>
+                  <a href="6-job-details.html" class="btn btn-primary btn-sm">View Details</a>
+                </div>
+              </div>
+
+              <!-- Load More -->
+              <div style="text-align: center; padding: 20px;">
+                <button class="btn btn-secondary">Load More Jobs</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- HCI Modal -->
+  <div id="hci-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">HCI Principles on This Page</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="hci-principle">
+          <h4>Consistency and Standards</h4>
+          <p>The interface uses familiar UI patterns, standard icons, and consistent styling to reduce the learning curve.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Aesthetic and Minimalist Design</h4>
+          <p>The layout avoids clutter, focusing only on essential information to minimize cognitive load.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="document.getElementById('hci-modal').classList.remove('active')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <button id="help-btn" class="help-btn" title="Learn about HCI principles on this page">?</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+

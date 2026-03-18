@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Details - JobFlow</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="job-seeker" data-page="job-details">
+  <div class="sidebar">
+    <a href="../index.html" class="sidebar-logo logo-brand">JobFlow</a>
+    <nav class="sidebar-nav">
+      <a href="4-job-seeker-dashboard.html" data-page="dashboard">Dashboard</a>
+      <a href="5-job-listings.html" data-page="jobs">Browse Jobs</a>
+      <a href="9-saved-jobs.html" data-page="saved">Saved Jobs</a>
+      <a href="10-my-applications.html" data-page="applications">My Applications</a>
+      <a href="11-profile.html" data-page="profile">My Profile</a>
+      <a href="13-notifications.html" data-page="notifications">Notifications</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <div class="header-content">
+        <div class="header-left">
+          <a href="5-job-listings.html" style="color: var(--color-text-secondary);">← Back to Jobs</a>
+        </div>
+        <div class="header-right">
+          <button class="btn btn-secondary btn-sm">Save Job</button>
+          <button class="btn btn-danger btn-sm">Share</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="container" style="max-width: 900px;">
+        <!-- Job Header -->
+        <div class="card mb-xl">
+          <div class="card-content">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 20px;">
+              <div>
+                <h1 style="margin: 0 0 8px 0;">Senior Frontend Engineer</h1>
+                <h3 style="color: var(--color-primary); font-weight: 400; margin: 0;">TechCorp Inc.</h3>
+              </div>
+              <span class="badge badge-primary">Actively Hiring</span>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding-top: 20px; border-top: 1px solid var(--color-neutral-200);">
+              <div>
+                <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Location</p>
+                <p style="font-weight: 600; margin: 4px 0 0 0;">San Francisco, CA</p>
+              </div>
+              <div>
+                <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Job Type</p>
+                <p style="font-weight: 600; margin: 4px 0 0 0;">Full-time</p>
+              </div>
+              <div>
+                <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Experience Level</p>
+                <p style="font-weight: 600; margin: 4px 0 0 0;">Mid-level (5+ years)</p>
+              </div>
+              <div>
+                <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Salary</p>
+                <p style="font-weight: 600; margin: 4px 0 0 0;">$150k - $180k</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="7-apply-job.html" class="btn btn-primary btn-lg">Apply Now</a>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="grid grid-cols-3">
+          <!-- Left Column -->
+          <div style="grid-column: span 2;">
+            <!-- Description -->
+            <div class="card mb-lg">
+              <h3>About the Role</h3>
+              <p>
+                We are looking for an exceptional Senior Frontend Engineer to join our engineering team. You will be responsible for building scalable, high-performance user interfaces for our flagship products used by millions of users worldwide.
+              </p>
+              <h4>What You'll Do</h4>
+              <ul style="margin: 0 0 20px 0; padding-left: 20px; color: var(--color-text-secondary);">
+                <li>Design and implement responsive web interfaces using React and modern JavaScript</li>
+                <li>Collaborate with product managers and designers to translate designs into high-quality code</li>
+                <li>Optimize application performance and ensure cross-browser compatibility</li>
+                <li>Mentor junior developers and participate in code reviews</li>
+                <li>Contribute to architectural decisions and technical documentation</li>
+              </ul>
+
+              <h4>Who You Are</h4>
+              <ul style="margin: 0 0 20px 0; padding-left: 20px; color: var(--color-text-secondary);">
+                <li>5+ years of professional frontend development experience</li>
+                <li>Expert-level knowledge of React, TypeScript, and CSS</li>
+                <li>Strong understanding of web performance and accessibility standards</li>
+                <li>Experience with testing frameworks (Jest, React Testing Library)</li>
+                <li>Excellent communication and collaboration skills</li>
+              </ul>
+
+              <h4>Nice to Have</h4>
+              <ul style="margin: 0; padding-left: 20px; color: var(--color-text-secondary);">
+                <li>Experience with GraphQL and API design</li>
+                <li>Knowledge of CI/CD pipelines and DevOps practices</li>
+                <li>Open source contributions</li>
+              </ul>
+            </div>
+
+            <!-- Benefits -->
+            <div class="card mb-lg">
+              <h3>Benefits & Perks</h3>
+              <div class="grid grid-cols-2">
+                <div>
+                  <p style="font-weight: 600; margin: 0 0 8px 0;">Competitive Compensation</p>
+                  <p style="color: var(--color-text-secondary); margin: 0;">$150k - $180k + equity</p>
+                </div>
+                <div>
+                  <p style="font-weight: 600; margin: 0 0 8px 0;">Health Insurance</p>
+                  <p style="color: var(--color-text-secondary); margin: 0;">Medical, dental, vision</p>
+                </div>
+                <div>
+                  <p style="font-weight: 600; margin: 0 0 8px 0;">Flexible Work</p>
+                  <p style="color: var(--color-text-secondary); margin: 0;">Remote options available</p>
+                </div>
+                <div>
+                  <p style="font-weight: 600; margin: 0 0 8px 0;">Professional Development</p>
+                  <p style="color: var(--color-text-secondary); margin: 0;">Learning budget & courses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <div>
+            <div class="card" style="position: sticky; top: 20px;">
+              <h4 style="margin-top: 0;">Required Skills</h4>
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
+                <span class="badge badge-primary">React</span>
+                <span class="badge badge-primary">TypeScript</span>
+                <span class="badge badge-primary">JavaScript</span>
+                <span class="badge badge-primary">CSS</span>
+                <span class="badge badge-primary">HTML5</span>
+              </div>
+
+              <hr style="border: none; border-top: 1px solid var(--color-neutral-200); margin: 20px 0;">
+
+              <h4>Company Info</h4>
+              <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0 0 12px 0;">
+                TechCorp Inc. is a leading technology company founded in 2010, specializing in cloud infrastructure and developer tools.
+              </p>
+              <a href="#" style="color: var(--color-primary); text-decoration: none; font-weight: 500;">Visit Company Website →</a>
+
+              <hr style="border: none; border-top: 1px solid var(--color-neutral-200); margin: 20px 0;">
+
+              <h4>Posted</h4>
+              <p style="color: var(--color-text-secondary); margin: 0;">2 days ago</p>
+              <p style="color: var(--color-text-secondary); font-size: 0.85rem; margin: 8px 0 0 0;">12 people have applied</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- HCI Modal -->
+  <div id="hci-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">HCI Principles on This Page</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="hci-principle">
+          <h4>Consistency and Standards</h4>
+          <p>The interface uses familiar UI patterns, standard icons, and consistent styling to reduce the learning curve.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Aesthetic and Minimalist Design</h4>
+          <p>The layout avoids clutter, focusing only on essential information to minimize cognitive load.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="document.getElementById('hci-modal').classList.remove('active')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <button id="help-btn" class="help-btn" title="Learn about HCI principles on this page">?</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+

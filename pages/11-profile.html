@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile - JobFlow</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="job-seeker" data-page="profile">
+  <div class="sidebar">
+    <a href="../index.html" class="sidebar-logo logo-brand">JobFlow</a>
+    <nav class="sidebar-nav">
+      <a href="4-job-seeker-dashboard.html" data-page="dashboard">Dashboard</a>
+      <a href="5-job-listings.html" data-page="jobs">Browse Jobs</a>
+      <a href="9-saved-jobs.html" data-page="saved">Saved Jobs</a>
+      <a href="10-my-applications.html" data-page="applications">My Applications</a>
+      <a href="11-profile.html" data-page="profile" class="active">My Profile</a>
+      <a href="13-notifications.html" data-page="notifications">Notifications</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <div class="header-content">
+        <div class="header-left">
+          <h1 style="margin: 0;">My Profile</h1>
+        </div>
+        <div class="header-right">
+          <a href="12-edit-profile.html" class="btn btn-primary btn-sm">Edit Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="container" style="max-width: 900px;">
+        <!-- Profile Header -->
+        <div class="card mb-xl">
+          <div style="display: flex; gap: 32px; align-items: start;">
+            <div style="width: 140px; height: 140px; border-radius: 8px; background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; flex-shrink: 0;">
+              JD
+            </div>
+            <div style="flex: 1;">
+              <h1 style="margin: 0 0 4px 0;">John Doe</h1>
+              <h3 style="color: var(--color-primary); font-weight: 400; margin: 0 0 16px 0;">Senior Frontend Engineer</h3>
+              <p style="margin: 0 0 16px 0; color: var(--color-text-secondary);">
+                Passionate about building beautiful and performant user interfaces. 8+ years of experience in web development.
+              </p>
+              <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                <div>
+                  <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Location</p>
+                  <p style="font-weight: 600; margin: 4px 0 0 0;">San Francisco, CA</p>
+                </div>
+                <div>
+                  <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Email</p>
+                  <p style="font-weight: 600; margin: 4px 0 0 0;">john@example.com</p>
+                </div>
+                <div>
+                  <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Phone</p>
+                  <p style="font-weight: 600; margin: 4px 0 0 0;">+91 9278486262</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Completion -->
+        <div class="card mb-xl" style="background: var(--color-neutral-50);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+            <h4 style="margin: 0;">Profile Strength</h4>
+            <span style="font-weight: 600; color: var(--color-accent-green);">85%</span>
+          </div>
+          <div style="width: 100%; height: 8px; background: var(--color-neutral-200); border-radius: 4px; overflow: hidden;">
+            <div style="width: 85%; height: 100%; background: var(--color-accent-green); border-radius: 4px;"></div>
+          </div>
+          <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 12px 0 0 0;">
+            Add a profile photo and portfolio link to improve your profile visibility to recruiters.
+          </p>
+        </div>
+
+        <!-- Skills -->
+        <div class="card mb-xl">
+          <div class="card-header">
+            <h3 class="card-title">Technical Skills</h3>
+            <a href="12-edit-profile.html" style="color: var(--color-primary); font-size: 0.9rem;">Edit →</a>
+          </div>
+          <div class="card-content">
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span class="badge badge-primary">React</span>
+              <span class="badge badge-primary">TypeScript</span>
+              <span class="badge badge-primary">JavaScript</span>
+              <span class="badge badge-primary">CSS</span>
+              <span class="badge badge-primary">HTML5</span>
+              <span class="badge badge-primary">Vue.js</span>
+              <span class="badge badge-primary">GraphQL</span>
+              <span class="badge badge-primary">Git</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="card mb-xl">
+          <div class="card-header">
+            <h3 class="card-title">Experience</h3>
+            <a href="12-edit-profile.html" style="color: var(--color-primary); font-size: 0.9rem;">Edit →</a>
+          </div>
+          <div class="card-content">
+            <div style="border-bottom: 1px solid var(--color-neutral-200); padding-bottom: 16px; margin-bottom: 16px;">
+              <h4 style="margin: 0 0 4px 0;">Senior Frontend Engineer</h4>
+              <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.9rem;">TechCorp Inc. • 3 years</p>
+              <p style="color: var(--color-text-secondary); margin: 8px 0 0 0; font-size: 0.9rem;">
+                Led development of scalable React applications serving millions of users. Mentored junior developers and implemented performance improvements resulting in 40% faster load times.
+              </p>
+            </div>
+
+            <div style="border-bottom: 1px solid var(--color-neutral-200); padding-bottom: 16px; margin-bottom: 16px;">
+              <h4 style="margin: 0 0 4px 0;">Frontend Developer</h4>
+              <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.9rem;">StartupXYZ • 2 years</p>
+              <p style="color: var(--color-text-secondary); margin: 8px 0 0 0; font-size: 0.9rem;">
+                Built and maintained responsive web applications using vanilla JavaScript and jQuery. Collaborated with designers to implement pixel-perfect interfaces.
+              </p>
+            </div>
+
+            <div>
+              <h4 style="margin: 0 0 4px 0;">Junior Developer</h4>
+              <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.9rem;">Web Agency Co. • 2 years</p>
+              <p style="color: var(--color-text-secondary); margin: 8px 0 0 0; font-size: 0.9rem;">
+                Developed static and dynamic websites for various clients. Learned full-stack development fundamentals and best practices.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="card mb-xl">
+          <div class="card-header">
+            <h3 class="card-title">Education</h3>
+            <a href="12-edit-profile.html" style="color: var(--color-primary); font-size: 0.9rem;">Edit →</a>
+          </div>
+          <div class="card-content">
+            <div>
+              <h4 style="margin: 0 0 4px 0;">Bachelor of Science in Computer Science</h4>
+              <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.9rem;">University of California, Berkeley • 2016</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Links</h3>
+            <a href="12-edit-profile.html" style="color: var(--color-primary); font-size: 0.9rem;">Edit →</a>
+          </div>
+          <div class="card-content">
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <div>
+                <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">LinkedIn Profile</p>
+                <a href="#" style="color: var(--color-primary); text-decoration: none;">linkedin.com/in/johndoe</a>
+              </div>
+              <div>
+                <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Portfolio Website</p>
+                <a href="#" style="color: var(--color-primary); text-decoration: none;">johndoe.com</a>
+              </div>
+              <div>
+                <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">GitHub</p>
+                <a href="#" style="color: var(--color-primary); text-decoration: none;">github.com/johndoe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- HCI Modal -->
+  <div id="hci-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">HCI Principles on This Page</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="hci-principle">
+          <h4>Consistency and Standards</h4>
+          <p>The interface uses familiar UI patterns, standard icons, and consistent styling to reduce the learning curve.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Aesthetic and Minimalist Design</h4>
+          <p>The layout avoids clutter, focusing only on essential information to minimize cognitive load.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="document.getElementById('hci-modal').classList.remove('active')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <button id="help-btn" class="help-btn" title="Learn about HCI principles on this page">?</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+

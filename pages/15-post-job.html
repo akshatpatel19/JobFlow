@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a Job - JobFlow</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="recruiter" data-page="post-job">
+  <!-- Top Navigation -->
+  <div class="header">
+    <div class="header-content">
+      <div class="header-left">
+        <div class="header-title logo-brand">JobFlow Recruiter</div>
+      </div>
+      <div class="header-right">
+        <a href="14-recruiter-dashboard.html" class="btn btn-secondary btn-sm">Back</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content" style="margin-left: 0;">
+    <div class="page-content">
+      <div class="container" style="max-width: 800px;">
+        <div class="page-header">
+          <h1>Post a New Job</h1>
+          <p>Fill in the details below to create a job posting that will attract top talent</p>
+        </div>
+
+        <!-- Form -->
+        <form id="post-job-form">
+        <!-- Progress Indicator -->
+        <div class="swipe-progress">
+          <div class="swipe-progress-item active">
+            <div class="swipe-progress-circle">1</div>
+            <p class="swipe-progress-title">Basic Info</p>
+          </div>
+          <div class="swipe-progress-item">
+            <div class="swipe-progress-circle">2</div>
+            <p class="swipe-progress-title">Details</p>
+          </div>
+        </div>
+
+          <div class="swipe-container">
+            <div class="swipe-wrapper">
+              <div class="swipe-step active card mb-xl">
+                <h3>Job Basics</h3>
+            
+            <div class="form-group">
+              <label for="job-title">Job Title <span class="required">*</span></label>
+              <input type="text" id="job-title" name="title" placeholder="e.g., Senior Frontend Engineer" required>
+              <span class="form-hint">Be specific and use industry-standard titles</span>
+            </div>
+
+            <div class="grid grid-cols-2">
+              <div class="form-group">
+                <label for="job-location">Location <span class="required">*</span></label>
+                <input type="text" id="job-location" name="location" placeholder="e.g., San Francisco, CA" required>
+              </div>
+              <div class="form-group">
+                <label for="job-type">Job Type <span class="required">*</span></label>
+                <select id="job-type" name="type" required>
+                  <option>Select job type</option>
+                  <option selected>Full-time</option>
+                  <option>Part-time</option>
+                  <option>Contract</option>
+                  <option>Temporary</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2">
+              <div class="form-group">
+                <label for="salary-min">Salary Range - Min <span class="required">*</span></label>
+                <input type="text" id="salary-min" name="salaryMin" placeholder="$100,000" required>
+              </div>
+              <div class="form-group">
+                <label for="salary-max">Salary Range - Max <span class="required">*</span></label>
+                <input type="text" id="salary-max" name="salaryMax" placeholder="$150,000" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="experience-level">Experience Level Required <span class="required">*</span></label>
+              <select id="experience-level" name="experienceLevel" required>
+                <option>Select experience level</option>
+                <option>Entry Level (0-2 years)</option>
+                <option selected>Mid-level (2-5 years)</option>
+                <option>Senior (5+ years)</option>
+                <option>Lead/Manager</option>
+              </select>
+            </div>
+            <div class="card-footer" style="justify-content: flex-end;">
+              <button class="btn btn-primary btn-lg btn-next">Next Step &rarr;</button>
+            </div>
+          </div>
+
+          <div class="swipe-step card mb-xl">
+            <h3>Job Description</h3>
+
+            <div class="form-group">
+              <label for="job-description">Description <span class="required">*</span></label>
+              <textarea id="job-description" name="description" rows="6" placeholder="Provide a compelling description of the role, team, and company..." required>We are looking for an exceptional Senior Frontend Engineer to join our engineering team...</textarea>
+              <span class="form-hint">Include key responsibilities, what makes your company great, and why this role matters</span>
+            </div>
+
+            <div class="form-group">
+              <label for="requirements">Key Requirements <span class="required">*</span></label>
+              <textarea id="requirements" name="requirements" rows="4" placeholder="List key requirements, one per line...">5+ years of professional frontend development experience
+Expert-level knowledge of React and TypeScript
+Strong understanding of web performance and accessibility
+Excellent communication and collaboration skills</textarea>
+              <span class="form-hint">One requirement per line. These help candidates self-select.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="skills">Required Skills <span class="required">*</span></label>
+              <div style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;">
+                <span class="badge badge-primary" style="cursor: pointer; padding: 8px 12px;">React ×</span>
+                <span class="badge badge-primary" style="cursor: pointer; padding: 8px 12px;">TypeScript ×</span>
+                <span class="badge badge-primary" style="cursor: pointer; padding: 8px 12px;">CSS ×</span>
+              </div>
+              <input type="text" placeholder="Add a skill and press Enter..." style="width: 100%;">
+            </div>
+
+            <div class="form-group">
+              <label for="benefits">Benefits & Perks</label>
+              <textarea id="benefits" name="benefits" rows="3" placeholder="e.g., Health insurance, 401k, Remote work, Professional development budget...">Health insurance (medical, dental, vision)
+401k matching
+Flexible work arrangements
+$5,000 annual learning budget
+Equity packages</textarea>
+              <span class="form-hint">Highlight what makes your company appealing</span>
+            </div>
+            <div class="card-footer" style="justify-content: space-between;">
+              <button class="btn btn-secondary btn-prev">&larr; Previous</button>
+              <div style="display: flex; gap: 16px;">
+                <a href="14-recruiter-dashboard.html" class="btn btn-secondary">Cancel</a>
+                <button type="submit" class="btn btn-primary btn-lg">Post Job</button>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- HCI Modal -->
+  <div id="hci-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">HCI Principles on This Page</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="hci-principle">
+          <h4>Progress Visibility</h4>
+          <p>The step indicator shows users where they are in the job posting process and what comes next.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Guidance and Help</h4>
+          <p>Form hints and placeholders provide guidance on what information to include, improving job posting quality.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Error Prevention</h4>
+          <p>Required fields are clearly marked and hints guide users toward creating effective job descriptions.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Logical Organization</h4>
+          <p>Form is grouped into sections (Basics, Description) making it easier to complete step-by-step.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="document.getElementById('hci-modal').classList.remove('active')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <button id="help-btn" class="help-btn" title="Learn about HCI principles on this page">?</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+

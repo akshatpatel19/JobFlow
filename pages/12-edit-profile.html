@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile - JobFlow</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="job-seeker" data-page="edit-profile">
+  <div class="sidebar">
+    <a href="../index.html" class="sidebar-logo logo-brand">JobFlow</a>
+    <nav class="sidebar-nav">
+      <a href="4-job-seeker-dashboard.html" data-page="dashboard">Dashboard</a>
+      <a href="5-job-listings.html" data-page="jobs">Browse Jobs</a>
+      <a href="9-saved-jobs.html" data-page="saved">Saved Jobs</a>
+      <a href="10-my-applications.html" data-page="applications">My Applications</a>
+      <a href="11-profile.html" data-page="profile">My Profile</a>
+      <a href="13-notifications.html" data-page="notifications">Notifications</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <div class="header-content">
+        <div class="header-left">
+          <h1 style="margin: 0;">Edit Profile</h1>
+        </div>
+        <div class="header-right">
+          <a href="11-profile.html" class="btn btn-secondary btn-sm">Back to Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="container" style="max-width: 700px;">
+        <form id="edit-profile-form">
+          <!-- Progress Indicator -->
+          <div class="swipe-progress">
+            <div class="swipe-progress-item active">
+              <div class="swipe-progress-circle">1</div>
+              <p class="swipe-progress-title">Personal</p>
+            </div>
+            <div class="swipe-progress-item">
+              <div class="swipe-progress-circle">2</div>
+              <p class="swipe-progress-title">Professional</p>
+            </div>
+            <div class="swipe-progress-item">
+              <div class="swipe-progress-circle">3</div>
+              <p class="swipe-progress-title">Links</p>
+            </div>
+            <div class="swipe-progress-item">
+              <div class="swipe-progress-circle">4</div>
+              <p class="swipe-progress-title">Preferences</p>
+            </div>
+          </div>
+
+          <div class="swipe-container">
+            <div class="swipe-wrapper">
+              <!-- Personal Information -->
+              <div class="swipe-step active card mb-xl">
+                <h3>Personal Information</h3>
+            <div class="grid grid-cols-2">
+              <div class="form-group">
+                <label for="edit-first-name">First Name <span class="required">*</span></label>
+                <input type="text" id="edit-first-name" name="firstName" value="John" required>
+              </div>
+              <div class="form-group">
+                <label for="edit-last-name">Last Name <span class="required">*</span></label>
+                <input type="text" id="edit-last-name" name="lastName" value="Doe" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="edit-email">Email Address <span class="required">*</span></label>
+              <input type="email" id="edit-email" name="email" value="john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="edit-phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="edit-phone" name="phone" value="+1 (555) 123-4567" required>
+            </div>
+
+            <div class="grid grid-cols-2">
+              <div class="form-group">
+                <label for="edit-location">City <span class="required">*</span></label>
+                <input type="text" id="edit-location" name="city" value="San Francisco" required>
+              </div>
+              <div class="form-group">
+                <label for="edit-state">State/Region <span class="required">*</span></label>
+                <input type="text" id="edit-state" name="state" value="California" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="edit-headline">Professional Headline <span class="required">*</span></label>
+              <input type="text" id="edit-headline" name="headline" value="Senior Frontend Engineer" placeholder="e.g., Senior Frontend Engineer" required>
+              <span class="form-hint">This appears on your profile and in search results</span>
+            </div>
+
+            <div class="form-group">
+              <label for="edit-bio">Professional Summary</label>
+              <textarea id="edit-bio" name="bio" rows="4" placeholder="Tell recruiters about yourself...">Passionate about building beautiful and performant user interfaces. 8+ years of experience in web development.</textarea>
+              <span class="form-hint">0-500 characters</span>
+            </div>
+            <div class="card-footer" style="justify-content: flex-end;">
+              <button class="btn btn-primary btn-lg btn-next">Next Step &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Professional Information -->
+          <div class="swipe-step card mb-xl">
+            <h3>Professional Information</h3>
+            <div class="form-group">
+              <label for="current-company">Current Company</label>
+              <input type="text" id="current-company" name="company" value="TechCorp Inc.">
+            </div>
+
+            <div class="form-group">
+              <label for="experience-level">Experience Level <span class="required">*</span></label>
+              <select id="experience-level" name="experienceLevel" required>
+                <option>Select experience level</option>
+                <option>Internship</option>
+                <option>Entry Level (0-2 years)</option>
+                <option>Mid-level (2-5 years)</option>
+                <option selected>Senior (5+ years)</option>
+                <option>Lead/Manager</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Technical Skills <span class="required">*</span></label>
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
+                <span class="badge badge-primary" style="cursor: pointer; padding: 8px 12px;">React ×</span>
+                <span class="badge badge-primary" style="cursor: pointer; padding: 8px 12px;">TypeScript ×</span>
+                <span class="badge badge-primary" style="cursor: pointer; padding: 8px 12px;">JavaScript ×</span>
+                <span class="badge badge-primary" style="cursor: pointer; padding: 8px 12px;">CSS ×</span>
+                <span class="badge badge-primary" style="cursor: pointer; padding: 8px 12px;">HTML5 ×</span>
+              </div>
+              <input type="text" placeholder="Add a skill and press Enter..." style="width: 100%;">
+              <span class="form-hint">Add skills that match your expertise</span>
+            </div>
+
+            <div class="form-group">
+              <label for="desired-roles">Desired Job Roles <span class="required">*</span></label>
+              <input type="text" id="desired-roles" name="desiredRoles" value="Frontend Engineer, Full Stack Developer" placeholder="e.g., Frontend Engineer, Product Manager" required>
+              <span class="form-hint">Separate multiple roles with commas</span>
+            </div>
+            <div class="card-footer" style="justify-content: space-between;">
+              <button class="btn btn-secondary btn-prev">&larr; Previous</button>
+              <button class="btn btn-primary btn-lg btn-next">Next Step &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Links -->
+          <div class="swipe-step card mb-xl">
+            <h3>Links & URLs</h3>
+            <div class="form-group">
+              <label for="linkedin-url">LinkedIn Profile</label>
+              <input type="text" id="linkedin-url" name="linkedin" placeholder="https://linkedin.com/in/your-profile" value="https://linkedin.com/in/johndoe">
+            </div>
+
+            <div class="form-group">
+              <label for="portfolio-url">Portfolio Website</label>
+              <input type="text" id="portfolio-url" name="portfolio" placeholder="https://yourportfolio.com" value="https://johndoe.com">
+            </div>
+
+            <div class="form-group">
+              <label for="github-url">GitHub Profile</label>
+              <input type="text" id="github-url" name="github" placeholder="https://github.com/your-username" value="https://github.com/johndoe">
+            </div>
+            <div class="card-footer" style="justify-content: space-between;">
+              <button class="btn btn-secondary btn-prev">&larr; Previous</button>
+              <button class="btn btn-primary btn-lg btn-next">Next Step &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Preferences -->
+          <div class="swipe-step card mb-xl">
+            <h3>Job Preferences</h3>
+            <div class="form-group">
+              <label for="job-types">Preferred Job Types <span class="required">*</span></label>
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <label style="font-weight: normal;"><input type="checkbox" checked> Full-time</label>
+                <label style="font-weight: normal;"><input type="checkbox"> Part-time</label>
+                <label style="font-weight: normal;"><input type="checkbox"> Contract</label>
+                <label style="font-weight: normal;"><input type="checkbox"> Remote</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="salary-expectation">Salary Expectation (Annual)</label>
+              <input type="text" id="salary-expectation" name="salary" placeholder="e.g., $150,000 - $180,000" value="$150,000 - $180,000">
+            </div>
+
+            <div class="form-group">
+              <label for="notice-period">Notice Period <span class="required">*</span></label>
+              <select id="notice-period" name="noticePeriod" required>
+                <option>Select notice period</option>
+                <option selected>2 weeks</option>
+                <option>1 month</option>
+                <option>2 months</option>
+                <option>3+ months</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="willing-relocate">Open to Relocation</label>
+              <div style="display: flex; gap: 16px; margin-top: 8px;">
+                <label style="font-weight: normal;"><input type="radio" name="relocate" checked> No</label>
+                <label style="font-weight: normal;"><input type="radio" name="relocate"> Yes</label>
+                <label style="font-weight: normal;"><input type="radio" name="relocate"> Maybe</label>
+              </div>
+            </div>
+            <div class="card-footer" style="justify-content: space-between;">
+              <button class="btn btn-secondary btn-prev">&larr; Previous</button>
+              <div style="display: flex; gap: 16px;">
+                <a href="11-profile.html" class="btn btn-secondary">Cancel</a>
+                <button type="submit" class="btn btn-primary btn-lg">Save Changes</button>
+              </div>
+            </div>
+          </div>
+            </div><!-- swipe-wrapper -->
+          </div><!-- swipe-container -->
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- HCI Modal -->
+  <div id="hci-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">HCI Principles on This Page</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="hci-principle">
+          <h4>Error Prevention</h4>
+          <p>Pre-filled forms with existing values prevent data loss. Required fields are clearly marked to avoid incomplete submissions.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Logical Organization</h4>
+          <p>Form sections (Personal, Professional, Links, Preferences) group related information, reducing cognitive load. The UI employs progressive disclosure via swipeable multi-step form panels.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Help and Documentation</h4>
+          <p>Form hints explain what information is needed and provide guidance on character limits and expected formats.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>User Control and Freedom</h4>
+          <p>Clear Cancel and Save buttons allow users to exit without losing data or commit changes safely.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="document.getElementById('hci-modal').classList.remove('active')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <button id="help-btn" class="help-btn" title="Learn about HCI principles on this page">?</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+

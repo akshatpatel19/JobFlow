@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply for Job - JobFlow</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="job-seeker" data-page="apply">
+  <div class="sidebar">
+    <a href="../index.html" class="sidebar-logo logo-brand">JobFlow</a>
+    <nav class="sidebar-nav">
+      <a href="4-job-seeker-dashboard.html" data-page="dashboard">Dashboard</a>
+      <a href="5-job-listings.html" data-page="jobs">Browse Jobs</a>
+      <a href="9-saved-jobs.html" data-page="saved">Saved Jobs</a>
+      <a href="10-my-applications.html" data-page="applications">My Applications</a>
+      <a href="11-profile.html" data-page="profile">My Profile</a>
+      <a href="13-notifications.html" data-page="notifications">Notifications</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <div class="header-content">
+        <div class="header-left">
+          <h1 style="margin: 0;">Apply for Position</h1>
+        </div>
+        <div class="header-right">
+          <a href="6-job-details.html" class="btn btn-secondary btn-sm">Back</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="container" style="max-width: 700px;">
+        <!-- Job Summary -->
+        <div class="card mb-xl">
+          <h3>Senior Frontend Engineer at TechCorp Inc.</h3>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-top: 16px; border-top: 1px solid var(--color-neutral-200);">
+            <div>
+              <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Location</p>
+              <p style="font-weight: 600; margin: 4px 0 0 0;">San Francisco, CA</p>
+            </div>
+            <div>
+              <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Job Type</p>
+              <p style="font-weight: 600; margin: 4px 0 0 0;">Full-time</p>
+            </div>
+            <div>
+              <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Salary</p>
+              <p style="font-weight: 600; margin: 4px 0 0 0;">$150k - $180k</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Application Form -->
+        <div class="card">
+          <h3>Your Application</h3>
+          <form id="application-form">
+            <div class="form-group">
+              <label for="full-name">Full Name <span class="required">*</span></label>
+              <input type="text" id="full-name" name="fullName" value="John Doe" required>
+              <span class="form-error" id="full-name-error" style="display: none;">Full name is required</span>
+            </div>
+
+            <div class="form-group">
+              <label for="app-email">Email Address <span class="required">*</span></label>
+              <input type="email" id="app-email" name="email" value="john@example.com" required>
+              <span class="form-error" id="app-email-error" style="display: none;">Valid email is required</span>
+            </div>
+
+            <div class="form-group">
+              <label for="app-phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="app-phone" name="phone" value="+1 (555) 123-4567" required>
+              <span class="form-error" id="app-phone-error" style="display: none;">Valid phone number is required</span>
+            </div>
+
+            <div class="form-group">
+              <label for="location">Preferred Location <span class="required">*</span></label>
+              <select id="location" name="location" required>
+                <option>Select a location</option>
+                <option selected>San Francisco, CA</option>
+                <option>Remote</option>
+                <option>Los Angeles, CA</option>
+                <option>New York, NY</option>
+              </select>
+              <span class="form-error" id="location-error" style="display: none;">Please select a location</span>
+            </div>
+
+            <div class="form-group">
+              <label for="resume">Resume <span class="required">*</span></label>
+              <div style="border: 2px dashed var(--color-neutral-300); border-radius: 8px; padding: 32px; text-align: center; background-color: var(--color-neutral-50);">
+                <p style="color: var(--color-text-secondary); margin: 0;">📄 john_doe_resume.pdf</p>
+                <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin: 8px 0 0 0;">Click or drag to upload</p>
+              </div>
+              <span class="form-hint" style="display: block; margin-top: 8px;">Accepted formats: PDF, DOC, DOCX (Max 5MB)</span>
+            </div>
+
+            <div class="form-group">
+              <label for="cover-letter">Cover Letter</label>
+              <textarea id="cover-letter" name="coverLetter" rows="6" placeholder="Tell us why you're interested in this role..."></textarea>
+              <span class="form-hint">Optional, but encouraged (500-1000 characters)</span>
+            </div>
+
+            <div class="form-group">
+              <label for="linkedin">LinkedIn Profile URL</label>
+              <input type="text" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourprofile">
+              <span class="form-hint">Optional</span>
+            </div>
+
+            <div class="form-group">
+              <label for="portfolio">Portfolio Website</label>
+              <input type="text" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com">
+              <span class="form-hint">Optional</span>
+            </div>
+
+            <div class="form-group">
+              <label for="experience">Years of Experience <span class="required">*</span></label>
+              <select id="experience" name="experience" required>
+                <option>Select experience level</option>
+                <option>0-2 years</option>
+                <option>2-5 years</option>
+                <option selected>5-10 years</option>
+                <option>10+ years</option>
+              </select>
+              <span class="form-error" id="experience-error" style="display: none;">Please select your experience level</span>
+            </div>
+
+            <div class="form-group">
+              <label for="notice">Notice Period <span class="required">*</span></label>
+              <select id="notice" name="notice" required>
+                <option>Select notice period</option>
+                <option selected>2 weeks</option>
+                <option>1 month</option>
+                <option>2 months</option>
+                <option>3+ months</option>
+              </select>
+              <span class="form-error" id="notice-error" style="display: none;">Please select your notice period</span>
+            </div>
+
+            <div class="form-group" style="flex-direction: row; align-items: flex-start; gap: 8px;">
+              <input type="checkbox" id="terms-agree" name="termsAgree" required style="width: 18px; height: 18px; margin-top: 4px;">
+              <div>
+                <label for="terms-agree" style="margin: 0; display: inline;">I confirm that the information provided is accurate <span class="required">*</span></label>
+                <span class="form-error" id="terms-agree-error" style="display: none;">Please confirm the information</span>
+              </div>
+            </div>
+
+            <div class="card-footer" style="justify-content: space-between; padding-top: 24px; margin-top: 24px; border-top: 1px solid var(--color-neutral-200);">
+              <a href="6-job-details.html" class="btn btn-secondary">Cancel</a>
+              <button type="submit" class="btn btn-primary btn-lg">Submit Application</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- HCI Modal -->
+  <div id="hci-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">HCI Principles on This Page</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="hci-principle">
+          <h4>Consistency and Standards</h4>
+          <p>The interface uses familiar UI patterns, standard icons, and consistent styling to reduce the learning curve.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Aesthetic and Minimalist Design</h4>
+          <p>The layout avoids clutter, focusing only on essential information to minimize cognitive load.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="document.getElementById('hci-modal').classList.remove('active')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <button id="help-btn" class="help-btn" title="Learn about HCI principles on this page">?</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+

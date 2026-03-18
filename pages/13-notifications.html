@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications - JobFlow</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="job-seeker" data-page="notifications">
+  <div class="sidebar">
+    <a href="../index.html" class="sidebar-logo logo-brand">JobFlow</a>
+    <nav class="sidebar-nav">
+      <a href="4-job-seeker-dashboard.html" data-page="dashboard">Dashboard</a>
+      <a href="5-job-listings.html" data-page="jobs">Browse Jobs</a>
+      <a href="9-saved-jobs.html" data-page="saved">Saved Jobs</a>
+      <a href="10-my-applications.html" data-page="applications">My Applications</a>
+      <a href="11-profile.html" data-page="profile">My Profile</a>
+      <a href="13-notifications.html" data-page="notifications" class="active">Notifications</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <div class="header-content">
+        <div class="header-left">
+          <h1 style="margin: 0;">Notifications</h1>
+          <p style="color: var(--color-text-secondary); margin: 0; margin-top: 4px;">8 unread messages</p>
+        </div>
+        <div class="header-right">
+          <button class="btn btn-secondary btn-sm">Mark All as Read</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="container" style="max-width: 800px;">
+        <!-- Notification Filters -->
+        <div style="display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap;">
+          <button class="btn btn-primary btn-sm">All (8)</button>
+          <button class="btn btn-secondary btn-sm">Applications (3)</button>
+          <button class="btn btn-secondary btn-sm">Messages (2)</button>
+          <button class="btn btn-secondary btn-sm">System (3)</button>
+        </div>
+
+        <!-- Notifications -->
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <!-- Unread Notification 1 -->
+          <div class="card" style="background: linear-gradient(to right, rgba(79, 70, 229, 0.05) 0%, transparent 100%);">
+            <div style="display: flex; justify-content: space-between; align-items: start; gap: 16px;">
+              <div style="flex: 1;">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                  <h4 style="margin: 0;">Interview Scheduled</h4>
+                  <span style="display: inline-block; width: 8px; height: 8px; background: var(--color-primary); border-radius: 50%; margin-left: 4px;"></span>
+                </div>
+                <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.95rem;">
+                  TechCorp Inc. has scheduled an interview for the Senior Frontend Engineer position on March 18, 2026 at 2:00 PM.
+                </p>
+                <div style="margin-top: 12px; display: flex; gap: 12px;">
+                  <button class="btn btn-primary btn-sm">View Interview</button>
+                  <button class="btn btn-secondary btn-sm">Reschedule</button>
+                </div>
+                <span style="font-size: 0.85rem; color: var(--color-text-secondary); display: block; margin-top: 8px;">2 hours ago</span>
+              </div>
+              <button style="background: none; border: none; color: var(--color-text-secondary); cursor: pointer; padding: 0; font-size: 1.5rem;">×</button>
+            </div>
+          </div>
+
+          <!-- Unread Notification 2 -->
+          <div class="card" style="background: linear-gradient(to right, rgba(79, 70, 229, 0.05) 0%, transparent 100%);">
+            <div style="display: flex; justify-content: space-between; align-items: start; gap: 16px;">
+              <div style="flex: 1;">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                  <h4 style="margin: 0;">Application Status Update</h4>
+                  <span style="display: inline-block; width: 8px; height: 8px; background: var(--color-primary); border-radius: 50%; margin-left: 4px;"></span>
+                </div>
+                <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.95rem;">
+                  Your application for UX/UI Designer at Design Studio Co. has been moved to the next round of review.
+                </p>
+                <div style="margin-top: 12px; display: flex; gap: 12px;">
+                  <a href="10-my-applications.html" class="btn btn-primary btn-sm">View Application</a>
+                </div>
+                <span style="font-size: 0.85rem; color: var(--color-text-secondary); display: block; margin-top: 8px;">5 hours ago</span>
+              </div>
+              <button style="background: none; border: none; color: var(--color-text-secondary); cursor: pointer; padding: 0; font-size: 1.5rem;">×</button>
+            </div>
+          </div>
+
+          <!-- Unread Notification 3 -->
+          <div class="card" style="background: linear-gradient(to right, rgba(79, 70, 229, 0.05) 0%, transparent 100%);">
+            <div style="display: flex; justify-content: space-between; align-items: start; gap: 16px;">
+              <div style="flex: 1;">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                  <h4 style="margin: 0;">New Job Recommendation</h4>
+                  <span style="display: inline-block; width: 8px; height: 8px; background: var(--color-primary); border-radius: 50%; margin-left: 4px;"></span>
+                </div>
+                <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.95rem;">
+                  Based on your profile, we found a DevOps Engineer role at CloudScale Tech that matches your skills.
+                </p>
+                <div style="margin-top: 12px; display: flex; gap: 12px;">
+                  <a href="6-job-details.html" class="btn btn-primary btn-sm">View Job</a>
+                  <button class="btn btn-secondary btn-sm">Save Job</button>
+                </div>
+                <span style="font-size: 0.85rem; color: var(--color-text-secondary); display: block; margin-top: 8px;">8 hours ago</span>
+              </div>
+              <button style="background: none; border: none; color: var(--color-text-secondary); cursor: pointer; padding: 0; font-size: 1.5rem;">×</button>
+            </div>
+          </div>
+
+          <!-- Read Notification 1 -->
+          <div class="card" style="opacity: 0.8;">
+            <div style="display: flex; justify-content: space-between; align-items: start; gap: 16px;">
+              <div style="flex: 1;">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                  <h4 style="margin: 0;">Application Confirmation</h4>
+                </div>
+                <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.95rem;">
+                  Your application for Full Stack Developer at StartupXYZ has been successfully submitted.
+                </p>
+                <span style="font-size: 0.85rem; color: var(--color-text-secondary); display: block; margin-top: 8px;">1 day ago</span>
+              </div>
+              <button style="background: none; border: none; color: var(--color-text-secondary); cursor: pointer; padding: 0; font-size: 1.5rem;">×</button>
+            </div>
+          </div>
+
+          <!-- Read Notification 2 -->
+          <div class="card" style="opacity: 0.8;">
+            <div style="display: flex; justify-content: space-between; align-items: start; gap: 16px;">
+              <div style="flex: 1;">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                  <h4 style="margin: 0;">Profile Update Tip</h4>
+                </div>
+                <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.95rem;">
+                  Add a profile photo to increase your visibility to recruiters by 30%.
+                </p>
+                <div style="margin-top: 12px; display: flex; gap: 12px;">
+                  <a href="12-edit-profile.html" class="btn btn-secondary btn-sm">Update Profile</a>
+                </div>
+                <span style="font-size: 0.85rem; color: var(--color-text-secondary); display: block; margin-top: 8px;">3 days ago</span>
+              </div>
+              <button style="background: none; border: none; color: var(--color-text-secondary); cursor: pointer; padding: 0; font-size: 1.5rem;">×</button>
+            </div>
+          </div>
+
+          <!-- Read Notification 3 -->
+          <div class="card" style="opacity: 0.8;">
+            <div style="display: flex; justify-content: space-between; align-items: start; gap: 16px;">
+              <div style="flex: 1;">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                  <h4 style="margin: 0;">Weekly Job Digest</h4>
+                </div>
+                <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.95rem;">
+                  15 new jobs matching your profile were posted this week. Check them out!
+                </p>
+                <div style="margin-top: 12px; display: flex; gap: 12px;">
+                  <a href="5-job-listings.html" class="btn btn-secondary btn-sm">View Jobs</a>
+                </div>
+                <span style="font-size: 0.85rem; color: var(--color-text-secondary); display: block; margin-top: 8px;">5 days ago</span>
+              </div>
+              <button style="background: none; border: none; color: var(--color-text-secondary); cursor: pointer; padding: 0; font-size: 1.5rem;">×</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HCI Modal -->
+  <div id="hci-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">HCI Principles on This Page</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="hci-principle">
+          <h4>Consistency and Standards</h4>
+          <p>Notification icons and statuses use consistent colors (blue for updates, purple for interviews) to quickly convey meaning.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Visibility of System Status</h4>
+          <p>The unread count and clearly differentiated read/unread states keep users informed of what needs their attention.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="document.getElementById('hci-modal').classList.remove('active')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <button id="help-btn" class="help-btn" title="Learn about HCI principles on this page">?</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+

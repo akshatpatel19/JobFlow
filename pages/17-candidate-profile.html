@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candidate Profile - JobFlow</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="recruiter" data-page="candidate-profile">
+  <!-- Top Navigation -->
+  <div class="header">
+    <div class="header-content">
+      <div class="header-left">
+        <div class="header-title logo-brand">JobFlow Recruiter</div>
+      </div>
+      <div class="header-right">
+        <a href="16-applicant-list.html" class="btn btn-secondary btn-sm">Back to Applicants</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content" style="margin-left: 0;">
+    <div class="page-content">
+      <div class="container" style="max-width: 1000px;">
+        <!-- Candidate Header -->
+        <div class="card mb-xl">
+          <div style="display: flex; justify-content: space-between; align-items: start; gap: 32px;">
+            <div style="flex: 1;">
+              <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+                <div style="width: 100px; height: 100px; border-radius: 8px; background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem;">
+                  JD
+                </div>
+                <div>
+                  <h1 style="margin: 0 0 4px 0;">John Doe</h1>
+                  <h3 style="color: var(--color-primary); font-weight: 400; margin: 0;">Senior Frontend Engineer</h3>
+                  <div style="display: flex; align-items: center; gap: 12px; margin-top: 8px;">
+                    <span style="color: var(--color-accent-orange); font-size: 0.95rem;">★★★★★</span>
+                    <span style="color: var(--color-text-secondary); font-size: 0.85rem;">5.0 rating (1 review)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-top: 16px; border-top: 1px solid var(--color-neutral-200);">
+                <div>
+                  <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Email</p>
+                  <p style="font-weight: 600; margin: 4px 0 0 0;">john@example.com</p>
+                </div>
+                <div>
+                  <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Phone</p>
+                  <p style="font-weight: 600; margin: 4px 0 0 0;">+1 (555) 123-4567</p>
+                </div>
+                <div>
+                  <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Location</p>
+                  <p style="font-weight: 600; margin: 4px 0 0 0;">San Francisco, CA</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="flex-shrink: 0;">
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <button class="btn btn-primary btn-lg">Schedule Interview</button>
+                <button class="btn btn-secondary">Send Message</button>
+                <button class="btn btn-success">Make Offer</button>
+                <button class="btn btn-danger">Reject</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Candidate Info Grid -->
+        <div class="grid grid-cols-2">
+          <!-- Left Column -->
+          <div>
+            <!-- Summary -->
+            <div class="card mb-lg">
+              <h3>Professional Summary</h3>
+              <p>
+                Passionate about building beautiful and performant user interfaces. 8+ years of experience in web development with a track record of delivering scalable solutions for millions of users.
+              </p>
+            </div>
+
+            <!-- Skills -->
+            <div class="card mb-lg">
+              <h3>Technical Skills</h3>
+              <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                <span class="badge badge-primary">React</span>
+                <span class="badge badge-primary">TypeScript</span>
+                <span class="badge badge-primary">JavaScript</span>
+                <span class="badge badge-primary">CSS</span>
+                <span class="badge badge-primary">HTML5</span>
+                <span class="badge badge-primary">Vue.js</span>
+                <span class="badge badge-primary">GraphQL</span>
+                <span class="badge badge-primary">Git</span>
+              </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="card">
+              <h3>Experience</h3>
+              <div style="border-bottom: 1px solid var(--color-neutral-200); padding-bottom: 16px; margin-bottom: 16px;">
+                <h4 style="margin: 0 0 4px 0;">Senior Frontend Engineer</h4>
+                <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.9rem;">TechCorp Inc. • 2023 - Present (3 years)</p>
+              </div>
+
+              <div style="border-bottom: 1px solid var(--color-neutral-200); padding-bottom: 16px; margin-bottom: 16px;">
+                <h4 style="margin: 0 0 4px 0;">Frontend Developer</h4>
+                <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.9rem;">StartupXYZ • 2020 - 2023 (2 years)</p>
+              </div>
+
+              <div>
+                <h4 style="margin: 0 0 4px 0;">Junior Developer</h4>
+                <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.9rem;">Web Agency Co. • 2018 - 2020 (2 years)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div>
+            <!-- Application Status -->
+            <div class="card mb-lg" style="background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);">
+              <h3 style="color: var(--color-accent-success); margin-top: 0;">Application Status</h3>
+              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                <span style="display: inline-block; width: 40px; height: 40px; background: var(--color-accent-success); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600;">✓</span>
+                <div>
+                  <p style="margin: 0; font-weight: 600;">Under Review</p>
+                  <p style="color: var(--color-text-secondary); font-size: 0.85rem; margin: 0;">Applied 2 hours ago</p>
+                </div>
+              </div>
+              <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">
+                This candidate matches 85% of job requirements and is a strong fit for the role.
+              </p>
+            </div>
+
+            <!-- Assessment -->
+            <div class="card mb-lg">
+              <h3>Your Assessment</h3>
+              <div class="form-group">
+                <label style="font-weight: 600; margin-bottom: 8px;">Rating</label>
+                <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+                  <button class="btn btn-secondary btn-sm">★</button>
+                  <button class="btn btn-secondary btn-sm">★★</button>
+                  <button class="btn btn-secondary btn-sm">★★★</button>
+                  <button class="btn btn-primary btn-sm">★★★★★</button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label style="font-weight: 600; margin-bottom: 8px;">Notes</label>
+                <textarea style="width: 100%; padding: 12px; border: 1px solid var(--color-neutral-300); border-radius: 8px; font-family: inherit;" rows="3" placeholder="Add internal notes about this candidate...">Strong technical background with relevant experience. Good communication skills demonstrated in previous roles.</textarea>
+              </div>
+
+              <button class="btn btn-primary btn-block">Save Assessment</button>
+            </div>
+
+            <!-- Education -->
+            <div class="card">
+              <h3>Education</h3>
+              <div>
+                <h4 style="margin: 0 0 4px 0;">Bachelor of Science in Computer Science</h4>
+                <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.9rem;">University of California, Berkeley • 2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- HCI Modal -->
+  <div id="hci-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">HCI Principles on This Page</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="hci-principle">
+          <h4>Consistency and Standards</h4>
+          <p>The interface uses familiar UI patterns, standard icons, and consistent styling to reduce the learning curve.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Aesthetic and Minimalist Design</h4>
+          <p>The layout avoids clutter, focusing only on essential information to minimize cognitive load.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="document.getElementById('hci-modal').classList.remove('active')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <button id="help-btn" class="help-btn" title="Learn about HCI principles on this page">?</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+

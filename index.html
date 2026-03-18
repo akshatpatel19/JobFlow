@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobFlow - Find Your Next Opportunity</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="landing">
+  <div class="header">
+    <div class="header-content">
+      <div class="header-left">
+        <div class="header-title logo-brand">JobFlow</div>
+      </div>
+      <div class="header-right">
+        <a href="pages/2-login.html" class="btn btn-secondary">Sign In</a>
+        <a href="pages/3-signup.html" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content" style="margin-left: 0;">
+    <div class="page-content">
+      <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-section">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Find Your Dream Job
+            </h1>
+            <p class="hero-description">
+              Connect with top companies and find the perfect opportunity that matches your skills and aspirations.
+            </p>
+            
+            <div class="hero-buttons">
+              <a href="pages/3-signup.html" class="btn btn-primary btn-lg">
+                Start Applying Today
+              </a>
+              <a href="pages/2-login.html" class="btn btn-secondary btn-lg">
+                I'm Hiring
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features-section">
+          <h2 class="section-title">Why Choose JobFlow?</h2>
+          
+          <div class="grid grid-cols-3 features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">🎯</div>
+              <h3>Smart Matching</h3>
+              <p>Our intelligent algorithm matches your skills and interests with the most relevant job opportunities.</p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="feature-icon">⚡</div>
+              <h3>Easy Application</h3>
+              <p>Apply to jobs with just a few clicks. Track all your applications in one convenient dashboard.</p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="feature-icon">📈</div>
+              <h3>Career Growth</h3>
+              <p>Access resources, tips, and insights to help you advance your career and land your dream role.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+          <h2>Ready to Take the Next Step?</h2>
+          <p class="cta-description">
+            Join thousands of job seekers finding their perfect match.
+          </p>
+          <a href="pages/3-signup.html" class="btn btn-secondary btn-lg">Create Your Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HCI Modal -->
+  <div id="hci-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">HCI Principles on This Page</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="hci-principle">
+          <h4>Aesthetic and Minimalist Design</h4>
+          <p>The landing page uses a clean, spacious layout with a clear visual hierarchy to direct attention to the primary calls to action.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Match Between System and Real World</h4>
+          <p>Familiar terms like "Sign In", "Get Started", and clear, descriptive icons are used in the features section to immediately convey meaning.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="document.getElementById('hci-modal').classList.remove('active')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <button id="help-btn" class="help-btn" title="Learn about HCI principles on this page">?</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - JobFlow</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="job-seeker" data-page="dashboard">
+  <div class="sidebar">
+    <a href="../index.html" class="sidebar-logo logo-brand">JobFlow</a>
+    <nav class="sidebar-nav">
+      <a href="4-job-seeker-dashboard.html" data-page="dashboard" class="active">Dashboard</a>
+      <a href="5-job-listings.html" data-page="jobs">Browse Jobs</a>
+      <a href="9-saved-jobs.html" data-page="saved">Saved Jobs</a>
+      <a href="10-my-applications.html" data-page="applications">My Applications</a>
+      <a href="11-profile.html" data-page="profile">My Profile</a>
+      <a href="13-notifications.html" data-page="notifications">Notifications</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <div class="header-content">
+        <div class="header-left">
+          <h1 style="margin: 0;">Welcome, John Doe</h1>
+          <p style="color: var(--color-text-secondary); margin: 0; margin-top: 4px;">Here's your job search overview</p>
+        </div>
+        <div class="header-right">
+          <a href="11-profile.html" class="btn btn-secondary btn-sm">Edit Profile</a>
+          <a href="../index.html" class="btn btn-primary btn-sm">Logout</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="container">
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-4">
+          <div class="card" style="text-align: center;">
+            <h3 style="color: var(--color-primary); margin-bottom: 8px;">12</h3>
+            <p style="color: var(--color-text-secondary); margin: 0;">Applications Sent</p>
+          </div>
+          <div class="card" style="text-align: center;">
+            <h3 style="color: var(--color-accent-green); margin-bottom: 8px;">3</h3>
+            <p style="color: var(--color-text-secondary); margin: 0;">Under Review</p>
+          </div>
+          <div class="card" style="text-align: center;">
+            <h3 style="color: var(--color-accent-orange); margin-bottom: 8px;">2</h3>
+            <p style="color: var(--color-text-secondary); margin: 0;">Interviews Scheduled</p>
+          </div>
+          <div class="card" style="text-align: center;">
+            <h3 style="color: var(--color-neutral-500); margin-bottom: 8px;">45</h3>
+            <p style="color: var(--color-text-secondary); margin: 0;">Saved Jobs</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2" style="margin-top: 32px;">
+          <!-- Recent Applications -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Recent Applications</h3>
+              <a href="10-my-applications.html" style="color: var(--color-primary); font-size: 0.9rem;">View All →</a>
+            </div>
+            <div class="card-content">
+              <div style="border-bottom: 1px solid var(--color-neutral-200); padding-bottom: 12px; margin-bottom: 12px;">
+                <h4 style="margin: 0 0 4px 0;">Senior Frontend Engineer</h4>
+                <p style="margin: 0; font-size: 0.9rem; color: var(--color-text-secondary);">TechCorp Inc.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px;">
+                  <span class="badge badge-reviewing">Under Review</span>
+                  <span style="font-size: 0.85rem; color: var(--color-text-secondary);">2 days ago</span>
+                </div>
+              </div>
+
+              <div style="border-bottom: 1px solid var(--color-neutral-200); padding-bottom: 12px; margin-bottom: 12px;">
+                <h4 style="margin: 0 0 4px 0;">Full Stack Developer</h4>
+                <p style="margin: 0; font-size: 0.9rem; color: var(--color-text-secondary);">StartupXYZ</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px;">
+                  <span class="badge badge-accepted">Accepted</span>
+                  <span style="font-size: 0.85rem; color: var(--color-text-secondary);">5 days ago</span>
+                </div>
+              </div>
+
+              <div>
+                <h4 style="margin: 0 0 4px 0;">Product Manager</h4>
+                <p style="margin: 0; font-size: 0.9rem; color: var(--color-text-secondary);">Innovation Labs</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px;">
+                  <span class="badge badge-interview">Interview Scheduled</span>
+                  <span style="font-size: 0.85rem; color: var(--color-text-secondary);">1 day ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recommended Jobs -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Recommended For You</h3>
+              <a href="5-job-listings.html" style="color: var(--color-primary); font-size: 0.9rem;">See More →</a>
+            </div>
+            <div class="card-content">
+              <div style="border-bottom: 1px solid var(--color-neutral-200); padding-bottom: 12px; margin-bottom: 12px;">
+                <h4 style="margin: 0 0 4px 0;">UX/UI Designer</h4>
+                <p style="margin: 0; font-size: 0.9rem; color: var(--color-text-secondary);">Design Studio Co. • San Francisco, CA</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px;">
+                  <span class="badge badge-primary">Design</span>
+                  <span style="font-size: 0.85rem; color: var(--color-text-secondary);">New</span>
+                </div>
+              </div>
+
+              <div style="border-bottom: 1px solid var(--color-neutral-200); padding-bottom: 12px; margin-bottom: 12px;">
+                <h4 style="margin: 0 0 4px 0;">DevOps Engineer</h4>
+                <p style="margin: 0; font-size: 0.9rem; color: var(--color-text-secondary);">CloudScale Tech • Remote</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px;">
+                  <span class="badge badge-primary">Backend</span>
+                  <span style="font-size: 0.85rem; color: var(--color-text-secondary);">New</span>
+                </div>
+              </div>
+
+              <div>
+                <h4 style="margin: 0 0 4px 0;">Data Scientist</h4>
+                <p style="margin: 0; font-size: 0.9rem; color: var(--color-text-secondary);">Analytics Inc. • New York, NY</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px;">
+                  <span class="badge badge-orange">ML/AI</span>
+                  <span style="font-size: 0.85rem; color: var(--color-text-secondary);">New</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- HCI Modal -->
+  <div id="hci-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">HCI Principles on This Page</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="hci-principle">
+          <h4>Consistency and Standards</h4>
+          <p>The interface uses familiar UI patterns, standard icons, and consistent styling to reduce the learning curve.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Aesthetic and Minimalist Design</h4>
+          <p>The layout avoids clutter, focusing only on essential information to minimize cognitive load.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="document.getElementById('hci-modal').classList.remove('active')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <button id="help-btn" class="help-btn" title="Learn about HCI principles on this page">?</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+

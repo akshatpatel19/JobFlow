@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recruiter Dashboard - JobFlow</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="recruiter" data-page="recruiter-dashboard">
+  <!-- Top Navigation -->
+  <div class="header">
+    <div class="header-content">
+      <div class="header-left">
+        <div class="header-title logo-brand">JobFlow Recruiter</div>
+      </div>
+      <div class="header-right">
+        <a href="15-post-job.html" class="btn btn-primary btn-sm">Post New Job</a>
+        <a href="18-settings.html" class="btn btn-secondary btn-sm">Settings</a>
+        <a href="../index.html" class="btn btn-secondary btn-sm">Logout</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content" style="margin-left: 0;">
+    <div class="page-content">
+      <div class="container">
+        <div class="page-header">
+          <h1>Recruiter Dashboard</h1>
+          <p>Manage your job postings, review candidates, and track hiring progress</p>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div style="display: flex; gap: 24px; border-bottom: 1px solid var(--color-neutral-200); margin-bottom: 32px; padding-bottom: 0;">
+          <a href="14-recruiter-dashboard.html" style="padding: 16px 0; border-bottom: 3px solid var(--color-primary); color: var(--color-primary); font-weight: 600; text-decoration: none;">Dashboard</a>
+          <a href="15-post-job.html" style="padding: 16px 0; border-bottom: 3px solid transparent; color: var(--color-text-secondary); font-weight: 500; text-decoration: none;">Post Job</a>
+          <a href="16-applicant-list.html" style="padding: 16px 0; border-bottom: 3px solid transparent; color: var(--color-text-secondary); font-weight: 500; text-decoration: none;">Applicants</a>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-4">
+          <div class="card" style="text-align: center;">
+            <h3 style="color: var(--color-primary); margin-bottom: 8px;">5</h3>
+            <p style="color: var(--color-text-secondary); margin: 0;">Active Job Postings</p>
+          </div>
+          <div class="card" style="text-align: center;">
+            <h3 style="color: var(--color-accent-green); margin-bottom: 8px;">87</h3>
+            <p style="color: var(--color-text-secondary); margin: 0;">Total Applications</p>
+          </div>
+          <div class="card" style="text-align: center;">
+            <h3 style="color: var(--color-accent-orange); margin-bottom: 8px;">12</h3>
+            <p style="color: var(--color-text-secondary); margin: 0;">Under Review</p>
+          </div>
+          <div class="card" style="text-align: center;">
+            <h3 style="color: var(--color-status-interview); margin-bottom: 8px;">3</h3>
+            <p style="color: var(--color-text-secondary); margin: 0;">Interviews Scheduled</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2" style="margin-top: 32px;">
+          <!-- Active Job Postings -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Active Job Postings</h3>
+              <a href="15-post-job.html" style="color: var(--color-primary); font-size: 0.9rem;">Post New →</a>
+            </div>
+            <div class="card-content">
+              <div style="border-bottom: 1px solid var(--color-neutral-200); padding-bottom: 12px; margin-bottom: 12px;">
+                <h4 style="margin: 0 0 4px 0;">Senior Frontend Engineer</h4>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-size: 0.85rem; color: var(--color-text-secondary);">San Francisco, CA</span>
+                  <span class="badge badge-primary">Active</span>
+                </div>
+                <p style="color: var(--color-text-secondary); font-size: 0.85rem; margin: 8px 0 0 0;">18 applications • Posted 5 days ago</p>
+              </div>
+
+              <div style="border-bottom: 1px solid var(--color-neutral-200); padding-bottom: 12px; margin-bottom: 12px;">
+                <h4 style="margin: 0 0 4px 0;">Full Stack Developer</h4>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-size: 0.85rem; color: var(--color-text-secondary);">Remote</span>
+                  <span class="badge badge-primary">Active</span>
+                </div>
+                <p style="color: var(--color-text-secondary); font-size: 0.85rem; margin: 8px 0 0 0;">12 applications • Posted 2 weeks ago</p>
+              </div>
+
+              <div style="border-bottom: 1px solid var(--color-neutral-200); padding-bottom: 12px; margin-bottom: 12px;">
+                <h4 style="margin: 0 0 4px 0;">UX/UI Designer</h4>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-size: 0.85rem; color: var(--color-text-secondary);">Los Angeles, CA</span>
+                  <span class="badge badge-primary">Active</span>
+                </div>
+                <p style="color: var(--color-text-secondary); font-size: 0.85rem; margin: 8px 0 0 0;">24 applications • Posted 1 week ago</p>
+              </div>
+
+              <div>
+                <h4 style="margin: 0 0 4px 0;">Product Manager</h4>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-size: 0.85rem; color: var(--color-text-secondary);">Seattle, WA</span>
+                  <span class="badge badge-primary">Active</span>
+                </div>
+                <p style="color: var(--color-text-secondary); font-size: 0.85rem; margin: 8px 0 0 0;">8 applications • Posted 3 days ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Applicants -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Recent Applicants</h3>
+              <a href="16-applicant-list.html" style="color: var(--color-primary); font-size: 0.9rem;">View All →</a>
+            </div>
+            <div class="card-content">
+              <div style="border-bottom: 1px solid var(--color-neutral-200); padding-bottom: 12px; margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <h4 style="margin: 0;">John Doe</h4>
+                  <span class="badge badge-reviewing">Under Review</span>
+                </div>
+                <p style="color: var(--color-text-secondary); font-size: 0.85rem; margin: 4px 0 0 0;">Senior Frontend Engineer</p>
+                <span style="font-size: 0.85rem; color: var(--color-text-secondary); display: block; margin-top: 4px;">Applied 2 hours ago</span>
+              </div>
+
+              <div style="border-bottom: 1px solid var(--color-neutral-200); padding-bottom: 12px; margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <h4 style="margin: 0;">Sarah Johnson</h4>
+                  <span class="badge badge-interview">Interview Scheduled</span>
+                </div>
+                <p style="color: var(--color-text-secondary); font-size: 0.85rem; margin: 4px 0 0 0;">UX/UI Designer</p>
+                <span style="font-size: 0.85rem; color: var(--color-text-secondary); display: block; margin-top: 4px;">Applied 1 day ago</span>
+              </div>
+
+              <div style="border-bottom: 1px solid var(--color-neutral-200); padding-bottom: 12px; margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <h4 style="margin: 0;">Mike Chen</h4>
+                  <span class="badge badge-applied">Applied</span>
+                </div>
+                <p style="color: var(--color-text-secondary); font-size: 0.85rem; margin: 4px 0 0 0;">Full Stack Developer</p>
+                <span style="font-size: 0.85rem; color: var(--color-text-secondary); display: block; margin-top: 4px;">Applied 3 days ago</span>
+              </div>
+
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <h4 style="margin: 0;">Emma Wilson</h4>
+                  <span class="badge badge-accepted">Accepted</span>
+                </div>
+                <p style="color: var(--color-text-secondary); font-size: 0.85rem; margin: 4px 0 0 0;">Product Manager</p>
+                <span style="font-size: 0.85rem; color: var(--color-text-secondary); display: block; margin-top: 4px;">Applied 5 days ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- HCI Modal -->
+  <div id="hci-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">HCI Principles on This Page</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="hci-principle">
+          <h4>Consistency and Standards</h4>
+          <p>The interface uses familiar UI patterns, standard icons, and consistent styling to reduce the learning curve.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Aesthetic and Minimalist Design</h4>
+          <p>The layout avoids clutter, focusing only on essential information to minimize cognitive load.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="document.getElementById('hci-modal').classList.remove('active')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <button id="help-btn" class="help-btn" title="Learn about HCI principles on this page">?</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+
