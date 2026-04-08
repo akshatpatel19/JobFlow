@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Applications - JobFlow</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="job-seeker" data-page="applications">
+  <div class="sidebar">
+    <a href="../index.html" class="sidebar-logo logo-brand">JobFlow</a>
+    <nav class="sidebar-nav">
+      <a href="4-job-seeker-dashboard.html" data-page="dashboard">Dashboard</a>
+      <a href="5-job-listings.html" data-page="jobs">Browse Jobs</a>
+      <a href="9-saved-jobs.html" data-page="saved">Saved Jobs</a>
+      <a href="10-my-applications.html" data-page="applications" class="active">My Applications</a>
+      <a href="11-profile.html" data-page="profile">My Profile</a>
+      <a href="13-notifications.html" data-page="notifications">Notifications</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <div class="header-content">
+        <div class="header-left">
+          <h1 style="margin: 0;">My Applications</h1>
+          <p style="color: var(--color-text-secondary); margin: 0; margin-top: 4px;">12 total applications</p>
+        </div>
+        <div class="header-right">
+          <select style="padding: 8px 16px; border: 1px solid var(--color-neutral-300); border-radius: 8px;">
+            <option>Filter by: All</option>
+            <option>Applied</option>
+            <option>Under Review</option>
+            <option>Interview</option>
+            <option>Rejected</option>
+            <option>Accepted</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="container" style="max-width: 1000px;">
+        <!-- Timeline View -->
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          <!-- Applied Section -->
+          <div>
+            <h3 style="color: var(--color-text-secondary); margin-bottom: 16px;">Recently Applied</h3>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <!-- Application 1 -->
+              <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: start; gap: 16px;">
+                  <div style="flex: 1;">
+                    <h4 style="margin: 0 0 4px 0;">Senior Frontend Engineer</h4>
+                    <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.95rem;">TechCorp Inc. • San Francisco, CA</p>
+                    <div style="display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap;">
+                      <span class="badge badge-applied">Applied</span>
+                      <span style="font-size: 0.85rem; color: var(--color-text-secondary);">Applied 2 days ago</span>
+                    </div>
+                  </div>
+                  <div style="text-align: right;">
+                    <button class="btn btn-secondary btn-sm">View Details</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Application 2 -->
+              <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: start; gap: 16px;">
+                  <div style="flex: 1;">
+                    <h4 style="margin: 0 0 4px 0;">Full Stack Developer</h4>
+                    <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.95rem;">StartupXYZ • Remote</p>
+                    <div style="display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap;">
+                      <span class="badge badge-applied">Applied</span>
+                      <span style="font-size: 0.85rem; color: var(--color-text-secondary);">Applied 5 days ago</span>
+                    </div>
+                  </div>
+                  <div style="text-align: right;">
+                    <button class="btn btn-secondary btn-sm">View Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Under Review Section -->
+          <div>
+            <h3 style="color: var(--color-text-secondary); margin-bottom: 16px;">Under Review</h3>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <!-- Application 3 -->
+              <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: start; gap: 16px;">
+                  <div style="flex: 1;">
+                    <h4 style="margin: 0 0 4px 0;">UX/UI Designer</h4>
+                    <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.95rem;">Design Studio Co. • Los Angeles, CA</p>
+                    <p style="color: var(--color-text-secondary); margin: 12px 0 0 0; font-size: 0.9rem;">
+                      💡 Tip: Reviewing applications typically takes 3-5 business days. If you don't hear back within 2 weeks, feel free to follow up.
+                    </p>
+                    <div style="display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap;">
+                      <span class="badge badge-reviewing">Under Review</span>
+                      <span style="font-size: 0.85rem; color: var(--color-text-secondary);">Applied 3 days ago</span>
+                    </div>
+                  </div>
+                  <div style="text-align: right;">
+                    <button class="btn btn-secondary btn-sm">View Details</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Application 4 -->
+              <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: start; gap: 16px;">
+                  <div style="flex: 1;">
+                    <h4 style="margin: 0 0 4px 0;">Product Manager</h4>
+                    <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.95rem;">Innovation Labs • Seattle, WA</p>
+                    <div style="display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap;">
+                      <span class="badge badge-reviewing">Under Review</span>
+                      <span style="font-size: 0.85rem; color: var(--color-text-secondary);">Applied 1 day ago</span>
+                    </div>
+                  </div>
+                  <div style="text-align: right;">
+                    <button class="btn btn-secondary btn-sm">View Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interview Scheduled Section -->
+          <div>
+            <h3 style="color: var(--color-text-secondary); margin-bottom: 16px;">Interview Scheduled</h3>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <!-- Application 5 -->
+              <div class="card" style="background: linear-gradient(to right, rgba(139, 92, 246, 0.05) 0%, transparent 100%);">
+                <div style="display: flex; justify-content: space-between; align-items: start; gap: 16px;">
+                  <div style="flex: 1;">
+                    <h4 style="margin: 0 0 4px 0;">Senior Backend Engineer</h4>
+                    <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.95rem;">CloudScale Tech • Remote</p>
+                    <p style="color: var(--color-primary); margin: 12px 0 0 0; font-size: 0.95rem; font-weight: 500;">
+                      📅 Interview scheduled for March 18, 2026 at 2:00 PM
+                    </p>
+                    <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 8px 0 0 0;">
+                      Technical interview with Engineering Lead (60 min)
+                    </p>
+                    <div style="display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap;">
+                      <span class="badge badge-interview">Interview Scheduled</span>
+                      <span style="font-size: 0.85rem; color: var(--color-text-secondary);">Applied 4 days ago</span>
+                    </div>
+                  </div>
+                  <div style="text-align: right;">
+                    <button class="btn btn-secondary btn-sm">View Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accepted Section -->
+          <div>
+            <h3 style="color: var(--color-text-secondary); margin-bottom: 16px;">Accepted</h3>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <!-- Application 6 -->
+              <div class="card" style="background: linear-gradient(to right, rgba(16, 185, 129, 0.05) 0%, transparent 100%);">
+                <div style="display: flex; justify-content: space-between; align-items: start; gap: 16px;">
+                  <div style="flex: 1;">
+                    <h4 style="margin: 0 0 4px 0;">Frontend Developer</h4>
+                    <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.95rem;">TechVision Corp • Austin, TX</p>
+                    <p style="color: var(--color-accent-green); margin: 12px 0 0 0; font-size: 0.95rem; font-weight: 500;">
+                      Offer extended: $120k - $140k annually
+                    </p>
+                    <div style="display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap;">
+                      <span class="badge badge-accepted">Accepted</span>
+                      <span style="font-size: 0.85rem; color: var(--color-text-secondary);">Offer sent 1 day ago</span>
+                    </div>
+                  </div>
+                  <div style="text-align: right;">
+                    <button class="btn btn-primary btn-sm">Review Offer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HCI Modal -->
+  <div id="hci-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">HCI Principles on This Page</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="hci-principle">
+          <h4>Match Between System and Real World</h4>
+          <p>The timeline view presents applications in a logical, chronological order that matches how people think about processes.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Visibility of System Status</h4>
+          <p>Clear status badges and timeline grouping keep users informed about where each application stands.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="document.getElementById('hci-modal').classList.remove('active')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <button id="help-btn" class="help-btn" title="Learn about HCI principles on this page">?</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+

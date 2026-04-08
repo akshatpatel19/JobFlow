@@ -1,78 +1,4 @@
 // HCI Modal Management
-// HCI Principles Data Mapping
-const HCI_PRINCIPLES_MAP = {
-  'landing': [
-    { title: 'Aesthetic and Minimalist Design', content: 'The landing page uses a clean, spacious layout with a clear visual hierarchy to direct attention to the primary calls to action.' },
-    { title: 'Match Between System and Real World', content: 'Familiar terms like "Sign In", "Get Started", and clear, descriptive icons are used to immediately convey meaning.' }
-  ],
-  'login': [
-    { title: 'Consistency and Standards', content: 'Standard login patterns (email/password) and consistent button placement help users access their accounts without guesswork.' },
-    { title: 'Visibility of System Status', content: 'The login process provides immediate feedback for incorrect credentials or loading states.' }
-  ],
-  'signup': [
-    { title: 'Error Prevention', content: 'Real-time validation on inputs helps users identify and fix errors before they even click "Submit".' },
-    { title: 'Help and Documentation', content: 'Helpful hints under fields (like password requirements) guide the user through a complex multi-step process.' }
-  ],
-  'dashboard': [
-    { title: 'Recognition Rather Than Recall', content: 'The dashboard provides a visual overview of recent activity and stats, so users don\'t have to remember their application status.' },
-    { title: 'User Control and Freedom', content: 'Clear links for editing profile or logging out allow users to easily navigate or exit their current workflow.' }
-  ],
-  'jobs': [
-    { title: 'Flexibility and Efficiency of Use', content: 'Advanced filters and search functionality allow both new and experienced users to quickly find relevant roles.' },
-    { title: 'Recognition Rather Than Recall', content: 'Badges and tags (e.g. "React", "Remote") provide instant recognition of key job attributes.' }
-  ],
-  'profile': [
-    { title: 'Consistency and Standards', content: 'Information is grouped logically (Skills, Education, Experience) in a format traditional to professional profiles.' },
-    { title: 'Aesthetic and Minimalist Design', content: 'The profile avoids visual clutter, using clear headings and whitespace to make content readable for recruiters.' }
-  ],
-  'recruiter-dashboard': [
-    { title: 'Visibility of System Status', content: 'Real-time stats on "Active Job Postings" and "Total Applications" keep recruiters informed about their hiring health.' },
-    { title: 'Consistency and Standards', content: 'The dashboard maintains the same layout for both job seeker and recruiter, reducing complexity for multi-role users.' }
-  ],
-  'post-job': [
-    { title: 'Error Prevention', content: 'Clearly marked required fields and structured forms help recruiters post high-quality job listings without missing details.' },
-    { title: 'Help and Documentation', content: 'Placeholders give examples of what to type, assisting users in providing the right information.' }
-  ],
-  'applicant-list': [
-    { title: 'Recognition Rather Than Recall', content: 'Applicant status badges (e.g. "Under Review") let recruiters quickly scan the list without remembering individual progress.' },
-    { title: 'Flexibility and Efficiency of Use', content: 'Quick actions on each applicant row enable efficient screening of large candidate pools.' }
-  ],
-  'candidate-profile': [
-    { title: 'Recognition Rather Than Recall', content: 'A visually distinct "match confidence" or skill summary helps recruiters quickly identify top candidates.' },
-    { title: 'Match Between System and Real World', content: 'The layout mimics a physical resume format while adding interactive, web-native enhancements.' }
-  ],
-  'notifications': [
-    { title: 'Visibility of System Status', content: 'Badges and timestamps clearly show which notifications are new and when they arrived.' },
-    { title: 'User Control and Freedom', content: 'Users can easily mark all as read or delete notifications to manage their inbox as they see fit.' }
-  ],
-  'saved': [
-    { title: 'User Control and Freedom', content: 'The ability to easily "unsave" a job gives users full control over their personal job stash.' },
-    { title: 'Recognition Rather Than Recall', content: 'Visual cards for saved jobs allow for quick scanning of opportunities of interest.' }
-  ],
-  'applications': [
-    { title: 'Visibility of System Status', content: 'A clear progress timeline for each application shows exactly where the user stands in the hiring process.' },
-    { title: 'Recognition Rather Than Recall', content: 'Company logos and clear titles help seekers quickly identify their various application paths.' }
-  ]
-};
-
-function updateHCIModalContent() {
-  const pageName = document.body.getAttribute('data-page');
-  const principles = HCI_PRINCIPLES_MAP[pageName] || [
-    { title: 'Consistency and Standards', content: 'The interface uses familiar UI patterns, standard icons, and consistent styling to reduce the learning curve.' },
-    { title: 'Aesthetic and Minimalist Design', content: 'The layout avoids clutter, focusing only on essential information to minimize cognitive load.' }
-  ];
-
-  const modalBody = document.querySelector('.modal-body');
-  if (modalBody) {
-    modalBody.innerHTML = principles.map(p => `
-      <div class="hci-principle">
-        <h4>${p.title}</h4>
-        <p>${p.content}</p>
-      </div>
-    `).join('');
-  }
-}
-
 const hciModal = document.getElementById('hci-modal');
 const helpBtn = document.getElementById('help-btn');
 const modalClose = document.querySelector('.modal-close');
@@ -96,7 +22,6 @@ if (hciModal) {
 
 function openHCIModal() {
   if (hciModal) {
-    updateHCIModalContent();
     hciModal.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
@@ -108,13 +33,6 @@ function closeHCIModal() {
     document.body.style.overflow = 'auto';
   }
 }
-
-// Keyboard navigation for modal
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && hciModal && hciModal.classList.contains('active')) {
-    closeHCIModal();
-  }
-});
 
 // Navigation
 function setActivePage(pageName) {

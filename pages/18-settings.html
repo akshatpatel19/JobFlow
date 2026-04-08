@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - JobFlow</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="recruiter" data-page="settings">
+  <!-- Top Navigation -->
+  <div class="header">
+    <div class="header-content">
+      <div class="header-left">
+        <div class="header-title logo-brand">JobFlow Recruiter</div>
+      </div>
+      <div class="header-right">
+        <a href="14-recruiter-dashboard.html" class="btn btn-secondary btn-sm">Back</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content" style="margin-left: 0;">
+    <div class="page-content">
+      <div class="container" style="max-width: 900px;">
+        <div class="page-header">
+          <h1>Settings</h1>
+          <p>Manage your account, company, and notification preferences</p>
+        </div>
+
+        <!-- Settings Tabs -->
+        <div style="display: flex; gap: 24px; border-bottom: 1px solid var(--color-neutral-200); margin-bottom: 32px; padding-bottom: 0;">
+          <a href="#" style="padding: 16px 0; border-bottom: 3px solid var(--color-primary); color: var(--color-primary); font-weight: 600; text-decoration: none;">Account</a>
+          <a href="#" style="padding: 16px 0; border-bottom: 3px solid transparent; color: var(--color-text-secondary); font-weight: 500; text-decoration: none;">Company</a>
+          <a href="#" style="padding: 16px 0; border-bottom: 3px solid transparent; color: var(--color-text-secondary); font-weight: 500; text-decoration: none;">Notifications</a>
+          <a href="#" style="padding: 16px 0; border-bottom: 3px solid transparent; color: var(--color-text-secondary); font-weight: 500; text-decoration: none;">Billing</a>
+        </div>
+
+        <!-- Account Settings -->
+        <div class="card mb-xl">
+          <h3>Account Information</h3>
+          <form id="account-form">
+            <div class="grid grid-cols-2">
+              <div class="form-group">
+                <label for="first-name">First Name <span class="required">*</span></label>
+                <input type="text" id="first-name" name="firstName" value="Jane" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name <span class="required">*</span></label>
+                <input type="text" id="last-name" name="lastName" value="Smith" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" value="jane@techcorp.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" value="+1 (555) 987-6543">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Update Account</button>
+          </form>
+        </div>
+
+        <!-- Password -->
+        <div class="card mb-xl">
+          <h3>Change Password</h3>
+          <form id="password-form">
+            <div class="form-group">
+              <label for="current-password">Current Password <span class="required">*</span></label>
+              <input type="password" id="current-password" name="currentPassword" required>
+            </div>
+
+            <div class="form-group">
+              <label for="new-password">New Password <span class="required">*</span></label>
+              <input type="password" id="new-password" name="newPassword" required>
+              <span class="form-hint">At least 8 characters with uppercase, lowercase, and numbers</span>
+            </div>
+
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password <span class="required">*</span></label>
+              <input type="password" id="confirm-password" name="confirmPassword" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Update Password</button>
+          </form>
+        </div>
+
+        <!-- Notifications -->
+        <div class="card mb-xl">
+          <h3>Notification Preferences</h3>
+          <div class="form-group">
+            <label style="font-weight: 600; margin-bottom: 16px; display: block;">Email Notifications</label>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <input type="checkbox" id="notify-applications" checked>
+                <label for="notify-applications" style="margin: 0; font-weight: normal;">
+                  New applications
+                  <span style="color: var(--color-text-secondary); font-size: 0.85rem; display: block; margin-top: 2px;">Get notified when candidates apply</span>
+                </label>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <input type="checkbox" id="notify-weekly" checked>
+                <label for="notify-weekly" style="margin: 0; font-weight: normal;">
+                  Weekly digest
+                  <span style="color: var(--color-text-secondary); font-size: 0.85rem; display: block; margin-top: 2px;">Summary of hiring activity every week</span>
+                </label>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <input type="checkbox" id="notify-messages" checked>
+                <label for="notify-messages" style="margin: 0; font-weight: normal;">
+                  Messages
+                  <span style="color: var(--color-text-secondary); font-size: 0.85rem; display: block; margin-top: 2px;">Receive candidate messages in email</span>
+                </label>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <input type="checkbox" id="notify-insights" checked>
+                <label for="notify-insights" style="margin: 0; font-weight: normal;">
+                  Hiring insights
+                  <span style="color: var(--color-text-secondary); font-size: 0.85rem; display: block; margin-top: 2px;">Tips and recommendations to improve hiring</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-primary">Save Preferences</button>
+        </div>
+
+        <!-- Danger Zone -->
+        <div class="card mb-xl">
+          <h3 style="color: var(--color-error);">Danger Zone</h3>
+          <p style="color: var(--color-text-secondary);">These actions cannot be undone. Please proceed with caution.</p>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: var(--color-neutral-50); border-radius: 8px;">
+              <div>
+                <h4 style="margin: 0;">Deactivate Account</h4>
+                <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Temporarily disable your account</p>
+              </div>
+              <button class="btn btn-danger">Deactivate</button>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: var(--color-neutral-50); border-radius: 8px;">
+              <div>
+                <h4 style="margin: 0;">Delete Account</h4>
+                <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Permanently delete your account and all data</p>
+              </div>
+              <button class="btn btn-danger">Delete</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Connected Apps -->
+        <div class="card">
+          <h3>Connected Applications</h3>
+          <p style="color: var(--color-text-secondary);">Applications with access to your JobFlow account</p>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: var(--color-neutral-50); border-radius: 8px;">
+              <div>
+                <h4 style="margin: 0;">Slack Integration</h4>
+                <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Receive job notifications in Slack</p>
+              </div>
+              <button class="btn btn-secondary btn-sm">Manage</button>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: var(--color-neutral-50); border-radius: 8px;">
+              <div>
+                <h4 style="margin: 0;">Zapier Integration</h4>
+                <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin: 0;">Automate workflows with Zapier</p>
+              </div>
+              <button class="btn btn-secondary btn-sm">Manage</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HCI Modal -->
+  <div id="hci-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">HCI Principles on This Page</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="hci-principle">
+          <h4>User Control and Freedom</h4>
+          <p>Clear navigation tabs allow users to jump between sections. Danger zone actions are grouped and visually distinct.</p>
+        </div>
+        <div class="hci-principle">
+          <h4>Error Prevention</h4>
+          <p>Confirmation fields are required for sensitive changes (like passwords) and descriptive hints establish password strength rules.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="document.getElementById('hci-modal').classList.remove('active')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <button id="help-btn" class="help-btn" title="Learn about HCI principles on this page">?</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+
